@@ -15,80 +15,81 @@
       </button>
     </header>
     <main class="main-container">
-      <section class="welcome-group-catalog">
-        <div class="welcome-group-catalog__wrapper">
-          <h1 class="welcome-group-catalog__main-title">
-            Каталог товаров
-          </h1>
-        </div>
+      <section class="welcome-group">
+        <h1 class="welcome-group__main-title">
+          Каталог товаров
+        </h1>
       </section>
       <section class="products">
-        <div class="products__card">
-          <a class="products__link" href="#">
-            <img class="products__image" src="img/bunny-product-mobile.jpg" width="260" height="195" alt="Игрушка вязаная «Зайчик-попрыгайчик»">
-            <h2 class="products__title">
-              Зайчик-попрыгайчик
-            </h2>
+        <h2 class="visually-hidden">
+          Карточки товаров
+        </h2>
+        <ul class="products__list">
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <img class="products__image" src="img/bunny-product-mobile.jpg" width="260" height="195" alt="Игрушка вязаная «Зайчик-попрыгайчик»">
+              <h3 class="products__title">
+                Зайчик-попрыгайчик
+              </h3>
+            </a>
             <p class="products__description">
               Рост 30 см, вес 200 г
             </p>
-          </a>
-          <span class="products__price">
-            1 200 руб.
-          </span>
-          <button class="products__add-to-cart-button" type="button">
-            <span class="visually-hidden">
-              Добавить позицию в корзину
+            <span class="products__price">
+              1 200 руб.
             </span>
-          </button>
-        </div>
-        <div class="products__card">
-          <a class="products__link" href="#">
-            <img class="products__image" src="img/laundry-basket-product-mobile.jpg" width="260" height="195" alt="Продукт «Корзинка для белья»">
-            <h2 class="products__title">
-              Корзинка для белья
-            </h2>
+            <a class="products__add-to-cart-button" href="#">
+              <span class="visually-hidden">
+                Добавить позицию в корзину
+              </span>
+            </a>
+          </li>
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <img class="products__image" src="img/laundry-basket-product-mobile.jpg" width="260" height="195" alt="Продукт «Корзинка для белья»">
+              <h3 class="products__title">
+                Корзинка для белья
+              </h3>
+            </a>
             <p class="products__description">
               Диаметр 15 см, высота 10 см
             </p>
-          </a>
-          <span class="products__price">
-            690 руб.
-          </span>
-          <button class="products__add-to-cart-button" type="button">
-            <span class="visually-hidden">
-              Добавить позицию в корзину
+            <span class="products__price">
+              690 руб.
             </span>
-          </button>
-        </div>
-        <div class="products__card">
-          <a class="products__link" href="#">
-            <img class="products__image" src="img/big-toy-basket-product-mobile.jpg" width="260" height="195" alt="Продукт «Большая корзинка для игрушек»">
-            <h2 class="products__title">
-              Большая корзинка<br>
-              для игрушек
-            </h2>
+            <a class="products__add-to-cart-button" href="#">
+              <span class="visually-hidden">
+                Добавить позицию в корзину
+              </span>
+            </a>
+          </li>
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <img class="products__image" src="img/big-toy-basket-product-mobile.jpg" width="260" height="195" alt="Продукт «Большая корзинка для игрушек»">
+              <h3 class="products__title">
+                Большая корзинка<br>
+                для игрушек
+              </h3>
+            </a>
             <p class="products__description">
               Диаметр 30 см, высота 30 см
             </p>
-          </a>
-          <span class="products__price">
-            1 500 руб.
-          </span>
-          <button class="products__add-to-cart-button" type="button">
-            <span class="visually-hidden">
-              Добавить позицию в корзину
+            <span class="products__price">
+              1 500 руб.
             </span>
-          </button>
-        </div>
+            <a class="products__add-to-cart-button" href="#">
+              <span class="visually-hidden">
+                Добавить позицию в корзину
+              </span>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="tutorial">
-        <div class="tutorial__title-wrapper">
-          <p class="tutorial__title">
-            Процесс<br>
-            производства
-          </p>
-        </div>
+        <h2 class="tutorial__title">
+          Процесс<br>
+          производства
+        </h2>
         <video class="tutorial-video">
           <source src="#">
         </video>
@@ -98,9 +99,9 @@
           подробное видео о том, как<br>
           появляются наши товары.
         </p>
-        <button class="button tutorial__order-button" type="button">
+        <a class="button tutorial__order-button" href="#">
           Сделать заказ
-        </button>
+        </a>
       </section>
     </main>
     <footer class="catalog-footer">
