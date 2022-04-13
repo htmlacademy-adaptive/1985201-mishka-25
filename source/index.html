@@ -3,35 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/mishka-logo-mobile.svg" width="320" height="79" alt="Магазин товаров ручной работы «Мишка»">
+    <header class="header">
+      <a class="header__logo">
+        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручной работы «Мишка»">
       </a>
-      <button class="main-header__menu-toggle" type="button">
+      <button class="header__menu-toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </header>
     <main class="main-container">
-      <section class="welcome-group">
-        <div class="welcome-group__wrapper">
-          <h1 class="welcome-group__main-title">
-            Милые штуки ручной работы для дома
+      <section class="main-welcome-group">
+        <div class="main-welcome-group__wrapper">
+          <h1 class="main-welcome-group__title">
+            Милые штуки<br>
+            ручной<br>
+            работы для дома
           </h1>
         </div>
       </section>
       <section class="assortment">
         <div class="assortment__wrapper">
-          <ul class="assortment__list">
+          <ul class="clear-list assortment__list">
             <li class="assortment__item">
               <a class="assortment__link">
-                Предметы интерьера
+                Предметы<br>
+                интерьера
               </a>
             </li>
-            <li class="assortment__item">
+            <li class="assortment__item assortment__item-toys">
               <a class="assortment__link">
-                Детские игрушки
+                Детские<br>
+                игрушки
               </a>
             </li>
           </ul>
@@ -89,7 +94,10 @@
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
-          <ul class="advantages__list">
+          <h2 class="advantages__title">
+            Коротко о нас
+          </h2>
+          <ul class="clear-list advantages__list">
             <li class="advantages__item">
               Экологически<br>
               чистые материалы
@@ -140,12 +148,12 @@
             @misssssiskras
           </span>
           <p class="reviews__toggles">
-            <button class="reviews__toggle" type="button">
+            <button class="reviews__toggle reviews__toggle-before" type="button">
               <span class="visually-hidden">
                 Назад
               </span>
             </button>
-            <button class="reviews__toggle" type="button">
+            <button class="reviews__toggle reviews__toggle-after" type="button">
               <span class="visually-hidden">
                 Вперёд
               </span>
@@ -184,13 +192,13 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="social main-footer__social">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="social footer__social">
           <h3 class="visually-hidden">
             Присоединяйтесь к нам в социальных сетях
           </h3>
-          <ul class="social__list">
+          <ul class="clear-list social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 Мы в Вконтакте
@@ -208,7 +216,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__copyright copyright">
+        <div class="footer__copyright copyright">
           <p class="copyright__text">
             Разработано:
           </p>
