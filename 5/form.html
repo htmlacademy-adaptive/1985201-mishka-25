@@ -17,9 +17,11 @@
     </header>
     <main class="main-container">
       <section class="welcome-group">
-        <h1 class="welcome-group__title">
-          Вязание на заказ
-        </h1>
+        <a class="welcome-group__link" href="#">
+          <h1 class="welcome-group__title">
+            Вязание на заказ
+          </h1>
+        </a>
       </section>
       <section class="order-form">
         <h2 class="visually-hidden">
@@ -35,121 +37,121 @@
           <legend class="product-type__title">
             Тип
           </legend>
-          <ul class="clear-list product-type__list">
+          <ul class="product-type__list">
             <li>
               <label class="product-type__item">
-                <input class="visually-hidden product-type__radio-input" type="radio" name="product-type__radio-input" value="interior-accessory" checked>
-                <span class="product-type__radio-mark"></span>
-                <span class="product-type__radio-label">Аксессуар для интерьера</span>
+                <input class="visually-hidden product-type__input" type="radio" name="product-type__radio-input" value="interior-accessory" checked>
+                <span class="product-type__mark product-type__mark--radio"></span>
+                <span class="product-type__label">Аксессуар для интерьера</span>
               </label>
             </li>
             <li>
               <label class="product-type__item">
-                <input class="visually-hidden product-type__radio-input" type="radio" name="product-type__radio-input" value="childrens-toy">
-                <span class="product-type__radio-mark"></span>
-                <span class="product-type__radio-label">Детская игрушка</span>
+                <input class="visually-hidden product-type__input" type="radio" name="product-type__radio-input" value="childrens-toy">
+                <span class="product-type__mark product-type__mark--radio"></span>
+                <span class="product-type__label">Детская игрушка</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="product-color">
-          <legend class="product-color__title">
+        <fieldset class="product-type">
+          <legend class="product-type__title">
             Цвет
           </legend>
-          <ul class="clear-list product-color__list">
+          <ul class="product-type__list">
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="white" checked>
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Белый</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="white" checked>
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Белый</span>
               </label>
             </li>
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="grey" checked>
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Серый</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="grey" checked>
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Серый</span>
               </label>
             </li>
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="tiffany">
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Тиффани</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="tiffany">
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Тиффани</span>
               </label>
             </li>
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="black">
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Чёрный</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="black">
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Чёрный</span>
               </label>
             </li>
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="pink">
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Розовый</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="pink">
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Розовый</span>
               </label>
             </li>
             <li>
-              <label class="product-color__item">
-                <input class="visually-hidden product-color__input" type="checkbox" name="orange">
-                <span class="product-color__mark"></span>
-                <span class="product-color__label">Оранжевый</span>
+              <label class="product-type__item">
+                <input class="visually-hidden product-type__input" type="checkbox" name="orange">
+                <span class="product-type__mark product-type__mark--checkbox"></span>
+                <span class="product-type__label">Оранжевый</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="client-fullname">
-          <legend class="client-fullname__title">
+        <fieldset class="product-type">
+          <legend class="product-type__title">
             ФИО
           </legend>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="client-fullname__name">
-              <label class="client-fullname__name-label" for="client-name">Имя:</label>
-              <input class="client-fullname__name-input" type="text" id="client-name" name="client-name" placeholder="Введите ваше имя*" required>
+            <div class="product-type__wrapper">
+              <label class="product-type__label" for="client-name">Имя:</label>
+              <input class="product-type__input product-type__input--border-bottom" type="text" id="client-name" name="client-name" placeholder="Введите ваше имя*" required>
             </div>
-            <div class="client-fullname__surname">
-              <label class="client-fullname__surname-label" for="client-surname">Фамилия:</label>
-              <input class="client-fullname__surname-input" type="text" id="client-surname" name="client-surname" placeholder="Укажите фамилию*" required>
+            <div class="product-type__wrapper">
+              <label class="product-type__label" for="client-surname">Фамилия:</label>
+              <input class="product-type__input product-type__input--border-bottom" type="text" id="client-surname" name="client-surname" placeholder="Укажите фамилию*" required>
             </div>
-            <div class="client-fullname__patronymic">
-              <label class="client-fullname__patronymic-label" for="client-patronymic">Отчество:</label>
-              <input class="client-fullname__patronymic-input" type="text" id="client-patronymic" name="client-patronymic" placeholder="Отчество, если желаете">
+            <div class="product-type__wrapper">
+              <label class="product-type__label" for="client-patronymic">Отчество:</label>
+              <input class="product-type__input product-type__input--border-bottom" type="text" id="client-patronymic" name="client-patronymic" placeholder="Отчество, если желаете">
             </div>
           </form>
         </fieldset>
-        <fieldset class="client-phone">
-          <legend class="client-phone__title">
+        <fieldset class="product-type">
+          <legend class="product-type__title">
             Тел
           </legend>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="client-phone__wrapper">
-              <label class="visually-hidden client-phone__label" for="client-phone">Телефонный номер</label>
-              <input class="client-phone__number" type="tel" id="client-phone" name="client-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <div class="product-type__wrapper">
+              <label class="visually-hidden product-type__label" for="client-phone">Телефонный номер</label>
+              <input class="product-type__input product-type__input--border-bottom" type="tel" id="client-phone" name="client-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </div>
           </form>
         </fieldset>
-        <fieldset class="client-email">
-          <legend class="client-email__title">
+        <fieldset class="product-type">
+          <legend class="product-type__title">
             E-mail
           </legend>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="client-email__wrapper">
-              <label class="visually-hidden client-email__label" for="client-email">Электронная почта</label>
-              <input class="client-email__adress" type="email" id="client-email" name="client-email" placeholder="Ваш Email*" required>
+            <div class="product-type__wrapper">
+              <label class="visually-hidden product-type__label" for="client-email">Электронная почта</label>
+              <input class="product-type__input product-type__input--border-bottom" type="email" id="client-email" name="client-email" placeholder="Ваш Email*" required>
             </div>
           </form>
         </fieldset>
-        <fieldset class="additional-info">
-          <legend class="additional-info__title">
+        <fieldset class="product-type">
+          <legend class="product-type__title">
             Доп
           </legend>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="additional-info__wrapper">
-              <label class="visually-hidden additional-info__label" for="additional-info">Дополнительная информация</label>
-              <textarea class="additional-info__input" rows="6" cols="20" id="additional-info" name="additional-info" placeholder="Ваш Email*">Опишите все ваши пожелания к заказу</textarea>
+            <div class="product-type__wrapper">
+              <label class="visually-hidden product-type__label" for="additional-info">Дополнительная информация</label>
+              <textarea class="product-type__input product-type__input--additional-info" rows="6" cols="20" id="additional-info" name="additional-info" placeholder="Ваш Email*">Опишите все ваши пожелания к заказу</textarea>
             </div>
           </form>
         </fieldset>
@@ -165,7 +167,7 @@
           <h3 class="visually-hidden">
             Присоединяйтесь к нам в социальных сетях
           </h3>
-          <ul class="clear-list social__list">
+          <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 Мы в Вконтакте
