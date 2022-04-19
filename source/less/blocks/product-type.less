@@ -36,8 +36,41 @@
     border-bottom: 2px solid @black;
   }
 
+  &--border-bottom:hover {
+    border: 0;
+    border-bottom: 2px solid @green-border-color;
+  }
+
+  &--border-bottom:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid @black;
+  }
+
+  &--border-bottom:active {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid @green-border-color;
+  }
+
   &--additional-info {
     font-family: "Open Sans", "Arial", sans-serif;
-    color: @black-input;
+    color: @black03;
+  }
+
+  &--additional-info:hover {
+    border: 2px solid @green-border-color;
+  }
+
+  &--additional-info:focus {
+    outline: none;
+    border: 2px solid @black;
+  }
+
+  &--additional-info:active {
+    outline: none;
+    border: 2px solid @green-border-color;
   }
 }
+
+
