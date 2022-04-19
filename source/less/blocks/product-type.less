@@ -2,6 +2,7 @@
   .bold-middle-smaller-font;
   color: @light-green;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .product-type__label {
@@ -10,9 +11,33 @@
 
 .product-type__list {
   .clear-list;
+  margin-bottom: 34px;
 }
 
 .product-type__wrapper {
   display: flex;
   flex-direction: column;
+}
+
+.product-type {
+  border: 0;
+  padding: 0;
+}
+
+.product-type__input {
+  padding: 17px 0 17px 0;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid @light-black;
+  margin-bottom: 34px;
+
+  &--border-bottom {
+    border: 0;
+    border-bottom: 2px solid @black;
+  }
+
+  &--additional-info {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: @black-input;
+  }
 }
