@@ -91,6 +91,10 @@
 .copyright__text {
   margin: 0;
 }
+.copyright__link {
+  text-decoration: none;
+  color: #63D1BB;
+}
 .choice {
   display: flex;
   align-items: center;
@@ -193,10 +197,6 @@
 .social__link {
   text-decoration: none;
   color: #231F20;
-}
-.copyright__link {
-  text-decoration: none;
-  color: #63D1BB;
 }
 .advantages {
   padding: 31px 30px 58px 30px;
