@@ -1,0 +1,42 @@
+.contacts {
+  padding: 38px 30px 39px 30px;
+}
+
+.contacts__list {
+  font-size: 14px;
+  line-height: 30px;
+  color: @light-black;
+  margin: 28px 0 20px 0;
+  padding: 0;
+}
+
+.contacts__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 42px;
+}
+
+.contacts__title {
+  .bold-big-font;
+  margin: 0 0 28px 0;
+}
+
+.contacts__map {
+  display: block;
+  margin: 0 0 41px -30px;
+}
+
+.contacts__email {
+  text-decoration: none;
+  color: @light-black;
+  border-bottom: 1px solid @green-border-color;
+
+  &:hover {
+    color: @email-hover-active-color;
+  }
+
+  &:active {
+    color: @email-hover-active-color;
+    border-bottom: 1px solid @email-hover-active-color01;
+  }
+}
