@@ -1,5 +1,6 @@
 .contacts {
   padding: 38px 30px 39px 30px;
+  overflow-x: hidden;
 }
 
 .contacts__list {
@@ -22,10 +23,21 @@
 }
 
 .contacts__map-wrapper {
-  background-image: url("../img/map-mobile.jpg"), url("../img/map-mark-mobile.svg");
+  position: relative;
+  height: 454px;
+  background-image: url("../img/map-mobile.jpg");
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100vw;
+  margin: 0 0 41px -30px;
+}
+
+.contacts__mark {
+  position: absolute;
+  color: @mark-color;
+  top: 32%;
+  left: 43%;
 }
 
 .contacts__email {

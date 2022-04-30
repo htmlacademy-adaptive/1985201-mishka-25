@@ -1,0 +1,133 @@
+.navigation {
+  position: relative;
+  padding: 40px 0 39px 0;
+  border-bottom: 1px solid @black01;
+}
+
+.navigation__list {
+  .clear-list;
+}
+
+.navigation__item {
+  display: none;
+}
+
+.navigation__logo {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  margin-left: -43px;
+  width: 86px;
+  height: 34px;
+  background-image: url("../img/mishka-logo-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation__menu-toggle {
+  position: absolute;
+  top: 32px;
+  right: 31px;
+  width: 20px;
+  height: 14px;
+  border: 0;
+  background-image: url("../img/menu-toggle.svg");
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+
+  .navigation {
+    padding: 0;
+  }
+
+  .navigation__menu-toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .navigation__item {
+    display: block;
+    .bold-middle-big-font;
+  }
+
+  .navigation__link {
+    text-decoration: none;
+    color: @black;
+
+    &--catalog {
+      display: none;
+    }
+
+    &--order {
+      display: none;
+    }
+
+    &--search {
+      display: block;
+      padding: 50px 32px 38px 32px;
+      background-image: url("../img/search.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      border-left: 1px solid @black01;
+    }
+
+    &--cart {
+      display: block;
+      padding: 32px 84px 32px 52px;
+      border-left: 1px solid @black01;
+    }
+  }
+
+  .navigation__logo {
+    top: 22px;
+    left: 105px;
+    margin-left: -56px;
+    width: 113px;
+    height: 46px;
+    background-image: url("../img/mishka-logo-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+   
+  .navigation__list {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navigation__link {
+
+    &--catalog {
+      display: block;
+      padding: 32px 36px 32px 50px;
+      border-right: 1px solid @black01;
+    }
+
+    &--order {
+      display: block;
+      padding: 32px 75px 32px 28px;
+    }
+
+    &--search {
+      margin-left: 272px;
+    }
+  }
+  
+  .navigation__logo {
+    top: 9px;
+    left: 50%;
+    margin-left: -74px;
+    width: 149px;
+    height: 72px;
+    background-image: url("../img/mishka-logo-desktop.svg");
+  }
+}
