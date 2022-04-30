@@ -2,10 +2,22 @@
   .clear-list;
   display: flex;
   justify-content: center;
-  padding: 25px 0 28px 0;
+  padding: 28px 30px 26px 30px;
+  border-bottom: 1px solid @grey-border-color;
 }
 
+.social-item {
+  align-self: center;
+}
 .social__link {
   text-decoration: none;
   color: @social-color;
+
+  &--vkontakte {
+    margin-right: 29px;
+  }
+
+  &--telegram {
+    margin-left: 29px;
+  }
 }
