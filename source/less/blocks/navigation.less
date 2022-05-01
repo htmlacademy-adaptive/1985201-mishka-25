@@ -2,6 +2,8 @@
   position: relative;
   padding: 40px 0 39px 0;
   border-bottom: 1px solid @black01;
+  max-width: @desktop-width-max;
+  margin: 0 auto;
 }
 
 .navigation__list {
@@ -60,10 +62,7 @@
     text-decoration: none;
     color: @black;
 
-    &--catalog {
-      display: none;
-    }
-
+    &--catalog,
     &--order {
       display: none;
     }

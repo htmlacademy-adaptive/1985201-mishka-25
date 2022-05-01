@@ -30,3 +30,23 @@
     background-position: top 21px right 27px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .assortment__wrapper {
+    padding: 0 50px 0 50px;
+    background-color: @welcome-background-color;
+    background-image: url("../img/welcome-border-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+  }
+
+  .assortment__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: @desktop-width-max;
+    margin: 0 auto;
+  }
+}
+
+// Добавить волнистый фон не получается, вернусь к этому позже
