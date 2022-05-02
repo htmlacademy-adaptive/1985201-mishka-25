@@ -62,36 +62,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "flower yarn"
-                          "money rocket"
-                          "heart gift";
+      "money rocket"
+      "heart gift";
   }
 
   .advantages__item {
     font-size: 20px;
     line-height: 22px;
-  }
 
-  .advantages__icon {
-    margin-top: 0;
-
-    &--flower {
-      margin-bottom: 18px;
-    }
-
-    &--yarn {
-      margin-bottom: 19px;
-    }
-
-    &--rocket {
-      margin-bottom: 28px;
-    }
-
-    &--gift {
-      margin-bottom: 21px;
-    }
-  }
-
-  .advantages__item {
     &--flower {
       grid-area: flower;
       margin-bottom: 57px;
@@ -119,6 +97,26 @@
 
     &--gift {
       grid-area: gift;
+    }
+  }
+
+  .advantages__icon {
+    margin-top: 0;
+
+    &--flower {
+      margin-bottom: 18px;
+    }
+
+    &--yarn {
+      margin-bottom: 19px;
+    }
+
+    &--rocket {
+      margin-bottom: 28px;
+    }
+
+    &--gift {
+      margin-bottom: 21px;
     }
   }
 }
