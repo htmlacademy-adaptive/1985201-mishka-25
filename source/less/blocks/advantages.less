@@ -46,3 +46,112 @@
     margin: 32px 0 20px 0;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 87%;
+  }
+
+  .advantages__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 55px 0 41px 0;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "flower yarn"
+                         "money rocket"
+                         "heart gift";
+  }
+
+  .advantages__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .advantages__icon {
+    margin-top: 0;
+
+    &--flower {
+      margin-bottom: 18px;
+    }
+
+    &--yarn {
+      margin-bottom: 19px;
+    }
+
+    &--rocket {
+      margin-bottom: 28px;
+    }
+
+    &--gift {
+      margin-bottom: 21px;
+    }
+  }
+
+  .advantages__item {
+    &--flower {
+      grid-area: flower;
+      margin-bottom: 57px;
+    }
+
+    &--money {
+      grid-area: money;
+      margin-bottom: 63px;
+    }
+
+    &--heart {
+      grid-area: heart;
+      margin-bottom: 25px;
+    }
+
+    &--yarn {
+      grid-area: yarn;
+      margin-bottom: 59px;
+    }
+
+    &--rocket {
+      grid-area: rocket;
+      margin-bottom: 58px;
+    }
+
+    &--gift {
+      grid-area: gift;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 91%;
+    max-width: @desktop-width-max;
+  }
+
+  .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin: 68px 0 39px 0;
+  }
+
+  .advantages__icon {
+    &--money {
+      margin-bottom: 26px;
+    }
+
+    &--yarn {
+      margin-bottom: 18px;
+    }
+  }
+
+  .advantages__item {
+    &--heart {
+      margin-bottom: 32px;
+    }
+
+    &--yarn {
+      margin-bottom: 60px;
+    }
+  }
+}
