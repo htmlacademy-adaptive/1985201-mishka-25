@@ -1,3 +1,9 @@
+.assortment__wrapper {
+  max-width: @desktop-width-max;
+  margin: 0 auto;  
+    
+}
+
 .assortment__list {
   .clear-list;
 }
@@ -32,20 +38,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .assortment__wrapper {
-    padding: 0 50px 0 50px;
-    background-color: @welcome-background-color;
-    background-image: url("../img/welcome-border-bottom.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-  }
-
   .assortment__list {
+    padding: 0 50px 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: @desktop-width-max;
-    margin: 0 auto;
+  }
+
+  .assortment__item {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
