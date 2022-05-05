@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка.</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon32.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -225,15 +226,9 @@
             Отзывы
           </h2>
           <p class="reviews__text">
-            Я молодая мама, но всё равно<br class="reviews__text-hyphenation">
-            фотографии не набирали и близко<br class="reviews__text-hyphenation">
-            такого количества лайков, как<br class="reviews__text-hyphenation">
-            у популярных инстамамочек.<br class="reviews__text-hyphenation">
-            В отчаянии, я накупила<br class="reviews__text-hyphenation">
-            аксессуаров и игрушек в Мишке,<br class="reviews__text-hyphenation">
-            и мои фотографии сразу стали<br class="reviews__text-hyphenation">
-            более стильными, а также<br class="reviews__text-hyphenation">
-            набирают больше лайков!
+            Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, 
+            как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, 
+            и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
           </p>
           <span class="reviews__user-name">
             Анастасия Красильникова
@@ -246,21 +241,15 @@
               <span class="visually-hidden">
                 Назад.
               </span>
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="currentColor"/>
-              </svg>
             </button>
             <button class="reviews__toggle reviews__toggle--next" type="button">
               <span class="visually-hidden">
                 Вперёд.
               </span>
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="currentColor"/>
-              </svg>
             </button>
           </p>
-          <button class="button reviews__feedback-button" type="button">
-            <span class="reviews__feedback-button-title">Написать</span>
+          <button class="button reviews__button" type="button">
+            <span class="reviews__button-title">Написать</span>
           </button>
         </div>
       </section>
@@ -271,11 +260,15 @@
           </h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="contacts__email-title">email:</span>
-              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <span class="contacts__email-legend">email:</span>
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
+                <span class="contacts__email-title">
+                  info@mimimishkashop.ru
+                </span>
+              </a>
             </li>
             <li class="contacts__item">
-              <span class="contacts__adress-title">адрес:</span>
+              <span class="contacts__adress-legend">адрес:</span>
               <address class="contacts__adress">
                 г. Санкт-Петербург<br>
                 ул. Большая Конюшенная<br>
@@ -291,8 +284,8 @@
               </svg>
             </a>
           </div>
-          <div class="contacts__feedback-button-wrapper">
-            <button class="button contacts__feedback-button" type="button">
+          <div class="contacts__button-wrapper">
+            <button class="button contacts__button" type="button">
               Напишите нам
             </button>
           </div>
