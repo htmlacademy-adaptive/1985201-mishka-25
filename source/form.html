@@ -4,46 +4,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header>
       <nav class="navigation">
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
+          <a class="navigation__logo">
+            <span class="visually-hidden">
+              "Магазин товаров ручной работы «Мишка»"
+            </span>
+          </a>
+          <button class="navigation__menu-toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню.
+            </span>
+          </button>
+          <ul class="navigation__list navigation__list--main">
+            <li class="navigation__item navigation__item--catalog">
               <a class="navigation__link navigation__link--catalog" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--order">
               <a class="navigation__link navigation__link--order" href="form.html">
                 Вязание на заказ
               </a>
             </li>
-            <li>
-              <a class="navigation__logo" href="index.html">
-                <span class="visually-hidden">
-                  "Магазин товаров ручной работы «Мишка»"
-                </span>
-              </a>
-            </li>
-            <li>
-              <button class="navigation__menu-toggle" type="button">
-                <span class="visually-hidden">
-                  Открыть меню.
-                </span>
-              </button>
-            </li>
-            <li class="navigation__item">
+          </ul>
+          <ul class="navigation__list navigation__list--actions">
+            <li class="navigation__item navigation__item--search">
               <a class="navigation__link navigation__link--search" href="#">
                 <span class="visually-hidden">
                   Поиск.
                 </span>
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--cart">
               <a class="navigation__link navigation__link--cart" href="#">
                 <span>
                   Корзина: пока пуста
@@ -51,6 +49,21 @@
               </a>
             </li>
           </ul>
+          <ul class="navigation__list navigation__list--offers">
+            <li class="navigation__item navigation__item--new-goods">
+              <a class="navigation__link navigation__link--new-goods" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--sale">
+              <a class="navigation__link navigation__link--sale" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <p class="navigation__disclaimer">
+            Бесплатная доставка по России
+          </p>
         </div>
       </nav>
     </header>

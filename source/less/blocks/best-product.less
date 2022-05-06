@@ -1,12 +1,15 @@
+.best-product {
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
 .best-product__wrapper {
   position: relative;
   width: 260px;
   margin: 0 auto;
   padding: 31px 30px 36px 30px;
-  background-image: url("../img/best-product-border-bottom.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100%;
 }
 
 .best-product__title {
@@ -49,6 +52,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .best-product {
+    background-size: auto 17px;
+  }
+
   .best-product__wrapper {
     width: 668px;
     margin: 0 auto;
@@ -100,8 +107,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .best-product {
+    background-size: auto 23px;
+  }
+
   .best-product__wrapper {
-    width: 1150px;
+    width: 1050px;
     margin: 0 auto;
   }
 
@@ -121,7 +132,7 @@
     width: 525px;
     height: 636px;
     top: 54px;
-    right: 170px;
+    right: 50px;
   }
 
   .best-product__title {

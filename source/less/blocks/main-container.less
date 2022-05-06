@@ -1,0 +1,35 @@
+.main-container__background-wrapper {
+  position: relative;
+  z-index: 1;
+  background-color: @welcome-background-color;
+  border-top: 1px solid @black01;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__background-wrapper {
+    margin-top: -45px;
+      
+    &::after {
+    content: "";
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/zigzag-welcome.svg");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: repeat-X;
+    background-size: auto 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__background-wrapper {
+    margin-top: -43px;
+    
+    &::after {
+      height: 34px;
+      background-size: auto 34px;
+    }
+  }
+}
