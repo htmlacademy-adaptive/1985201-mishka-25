@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка.</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/1985201-mishka-25/6/">
 </head>
@@ -11,39 +12,37 @@
     <header>
       <nav class="navigation">
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
-            <li class="navigation__item">
+          <a class="navigation__logo">
+            <span class="visually-hidden">
+              "Магазин товаров ручной работы «Мишка»"
+            </span>
+          </a>
+          <button class="navigation__menu-toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню.
+            </span>
+          </button>
+          <ul class="navigation__list navigation__list--main">
+            <li class="navigation__item navigation__item--catalog">
               <a class="navigation__link navigation__link--catalog" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--order">
               <a class="navigation__link navigation__link--order" href="form.html">
                 Вязание на заказ
               </a>
             </li>
-            <li>
-              <a class="navigation__logo">
-                <span class="visually-hidden">
-                  "Магазин товаров ручной работы «Мишка»"
-                </span>
-              </a>
-            </li>
-            <li>
-              <button class="navigation__menu-toggle" type="button">
-                <span class="visually-hidden">
-                  Открыть меню.
-                </span>
-              </button>
-            </li>
-            <li class="navigation__item">
+          </ul>
+          <ul class="navigation__list navigation__list--actions">
+            <li class="navigation__item navigation__item--search">
               <a class="navigation__link navigation__link--search" href="#">
                 <span class="visually-hidden">
                   Поиск.
                 </span>
               </a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--cart">
               <a class="navigation__link navigation__link--cart" href="#">
                 <span>
                   Корзина: пока пуста
@@ -51,68 +50,54 @@
               </a>
             </li>
           </ul>
+          <ul class="navigation__list navigation__list--offers">
+            <li class="navigation__item navigation__item--new-goods">
+              <a class="navigation__link navigation__link--new-goods" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--sale">
+              <a class="navigation__link navigation__link--sale" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <p class="navigation__disclaimer">
+            Бесплатная доставка по России
+          </p>
         </div>
       </nav>
     </header>
     <main class="main-container">
-      <section class="main-welcome-group">
-        <div class="main-welcome-group__wrapper">
-          <!--В модуле 2 в лайве на 1 часе 30й минуте Николай про такую ситуацию рассказывал. Так нельзя, но я не знаю
-          как заверстать это по-другому. В версии для планшета есть каталог товаров и вязание на заказ в этом блоке.
-          Изначально они в навигации, но навигация - в хедере, а это уже блок ниже хедера. Может, я не вижу
-          очевидного решения, но как по-другому сделать без дубляжа - не знаю-->
-          <div class="offers">
-            <ul class="offers__list">
-              <li class="offers__item offers__item--catalog">
-                <a class="offers__link" href="catalog.html">
-                  Каталог товаров
+      <div class="main-container__background-wrapper">
+        <section class="main-welcome-group">
+          <div class="main-welcome-group__wrapper">
+            <h1 class="main-welcome-group__title">
+              Милые штуки<br>
+              ручной<br class="main-welcome-group__hyphenation">
+              работы для дома
+            </h1>
+          </div>
+        </section>
+        <section class="assortment">
+          <div class="assortment__wrapper">
+            <ul class="assortment__list">
+              <li class="assortment__item assortment__item--interior">
+                <a class="assortment__link">
+                  Предметы<br>
+                  интерьера
                 </a>
               </li>
-              <li class="offers__item offers__item--order">
-                <a class="offers__link" href="form.html">
-                  Вязание на заказ
-                </a>
-              </li>
-              <li class="offers__item offers__item--new-goods">
-                <a class="offers__link" href="#">
-                  Новые поступления
-                </a>
-              </li>
-              <li class="offers__item offers__item--sale">
-                <a class="offers__link" href="#">
-                  Распродажа
+              <li class="assortment__item assortment__item--toys">
+                <a class="assortment__link">
+                  Детские<br>
+                  игрушки
                 </a>
               </li>
             </ul>
-            <p class="offers__disclaimer">
-              Бесплатная доставка по России
-            </p>
           </div>
-          <h1 class="main-welcome-group__title">
-            Милые штуки<br>
-            ручной<br class="main-welcome-group__hyphenation">
-            работы для дома
-          </h1>
-        </div>
-      </section>
-      <section class="assortment">
-        <div class="assortment__wrapper">
-          <ul class="assortment__list">
-            <li class="assortment__item assortment__item--interior">
-              <a class="assortment__link">
-                Предметы<br>
-                интерьера
-              </a>
-            </li>
-            <li class="assortment__item assortment__item--toys">
-              <a class="assortment__link">
-                Детские<br>
-                игрушки
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+      </div>
       <section class="best-product">
         <div class="best-product__wrapper">
           <div class="best-product__header">
@@ -225,65 +210,61 @@
           <h2 class="reviews__title">
             Отзывы
           </h2>
-          <p class="reviews__text">
-            Я молодая мама, но всё равно<br class="reviews__text-hyphenation">
-            фотографии не набирали и близко<br class="reviews__text-hyphenation">
-            такого количества лайков, как<br class="reviews__text-hyphenation">
-            у популярных инстамамочек.<br class="reviews__text-hyphenation">
-            В отчаянии, я накупила<br class="reviews__text-hyphenation">
-            аксессуаров и игрушек в Мишке,<br class="reviews__text-hyphenation">
-            и мои фотографии сразу стали<br class="reviews__text-hyphenation">
-            более стильными, а также<br class="reviews__text-hyphenation">
-            набирают больше лайков!
-          </p>
-          <span class="reviews__user-name">
-            Анастасия Красильникова
-          </span>
-          <span class="reviews__user-nick">
-            @misssssiskras
-          </span>
+          <div class="reviews__slide">
+            <p class="reviews__text">
+              Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков,
+              как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке,
+              и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
+            </p>
+            <span class="reviews__user-name">
+              Анастасия Красильникова
+            </span>
+            <span class="reviews__user-nick">
+              @misssssiskras
+            </span>
+          </div>
           <p class="reviews__toggles">
             <button class="reviews__toggle reviews__toggle--previous" type="button">
               <span class="visually-hidden">
                 Назад.
               </span>
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z" fill="currentColor"/>
-              </svg>
             </button>
             <button class="reviews__toggle reviews__toggle--next" type="button">
               <span class="visually-hidden">
                 Вперёд.
               </span>
-              <svg width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 11h42.3l-8.1-8.2L37 0l13 13-13 13-2.8-2.8 8.1-8.2H0v-4Z" fill="currentColor"/>
-              </svg>
             </button>
           </p>
-          <button class="button reviews__feedback-button" type="button">
-            <span class="reviews__feedback-button-title">Написать</span>
+          <button class="button reviews__button" type="button">
+            <span class="reviews__button-title">Написать</span>
           </button>
         </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">
-            Контакты
-          </h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <span class="contacts__email-title">email:</span>
-              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-            </li>
-            <li class="contacts__item">
-              <span class="contacts__adress-title">адрес:</span>
-              <address class="contacts__adress">
-                г. Санкт-Петербург<br>
-                ул. Большая Конюшенная<br>
-                д. 19/8, офис 101
-              </address>
-            </li>
-          </ul>
+          <div class="contacts__data-wrapper">
+            <h2 class="contacts__title">
+              Контакты
+            </h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__email-legend">email:</span>
+                <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
+                  <span class="contacts__email-title">
+                    info@mimimishkashop.ru
+                  </span>
+                </a>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__adress-legend">адрес:</span>
+                <address class="contacts__adress">
+                  г. Санкт-Петербург<br>
+                  ул. Большая Конюшенная<br>
+                  д. 19/8, офис 101
+                </address>
+              </li>
+            </ul>
+          </div>
           <div class="contacts__map-wrapper">
             <a class="contacts__map">
               <span class="visually-hidden">Как добраться до магазина «Мишка».</span>
@@ -292,8 +273,8 @@
               </svg>
             </a>
           </div>
-          <div class="contacts__feedback-button-wrapper">
-            <button class="button contacts__feedback-button" type="button">
+          <div class="contacts__button-wrapper">
+            <button class="button contacts__button" type="button">
               Напишите нам
             </button>
           </div>
