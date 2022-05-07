@@ -1,5 +1,6 @@
 .assortment__wrapper {
   margin: 0 auto;
+  width: 100%;
 }
 
 .assortment__list {
@@ -36,6 +37,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .assortment__wrapper {
+    width: 100%;
+  }
+
   .assortment__list {
     padding: 0 50px;
     display: grid;
@@ -47,4 +52,9 @@
     line-height: 30px;
   }
 }
-// Добавить волнистый фон не получается, вернусь к этому позже
+
+@media (min-width: @desktop-width) {
+  .assortment__wrapper {
+    width: 1150px;
+  }
+}
