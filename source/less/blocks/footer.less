@@ -1,9 +1,53 @@
 .footer {
-  background-color: @gray;
+  background-color: @grey;
+  padding: 25px 30px 23px 30px;
+}
+
+.footer__wrapper {
+  width: 100%;
+}
+
+.footer__logo {
+  display: none;
 }
 
 .footer__copyright {
   display: flex;
   justify-content: center;
-  padding: 29px 0 31px 0;
+  align-items: center;
+  margin-top: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding: 51px 50px 58px 50px;
+    background-color: @grey;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    display: block;
+    background-image: url("../img/mishka-logo-simple.svg");
+    width: 86px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer__copyright {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__wrapper {
+    width: 1050px;
+  }
 }

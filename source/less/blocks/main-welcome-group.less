@@ -1,11 +1,38 @@
 .main-welcome-group__wrapper {
-  padding: 73px 0 120px 0;
+  margin: 0 auto;
   background-image: url("../img/main-welcome-background.jpg");
-  background-position: 100% 20%;
+  background-size: auto;
+  background-position: center top -17px;
+  background-repeat: no-repeat;
 }
 
 .main-welcome-group__title {
   .bold-bigger-font;
   text-align: center;
   margin: 0;
+  padding: 73px 0 120px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-welcome-group__hyphenation {
+    display: none;
+  }
+
+  .main-welcome-group__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 155px 0 372px 0;
+  }
+
+  .main-welcome-group__wrapper {
+    background-size: auto 123%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-welcome-group__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 113px 0 355px 0;
+  }
 }

@@ -1,4 +1,14 @@
+.best-product {
+  background-image: url("../img/zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 6px;
+}
+
 .best-product__wrapper {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
   padding: 31px 30px 36px 30px;
 }
 
@@ -11,7 +21,11 @@
   .bold-middle-middle-font;
   text-transform: uppercase;
   color: @light-green;
-  margin: 3px 0 0 0;
+  margin-top: 3px;
+}
+
+.best-product__subtitle-hyphenation {
+  display: none;
 }
 
 .best-product__description {
@@ -23,6 +37,9 @@
 
 .best-product__image {
   display: block;
+  text-align: center;
+  width: 260px;
+  height: 315px;
   margin: 28px 0 25px 0;
 }
 
@@ -32,4 +49,99 @@
   text-align: center;
   color: @light-black;
   margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .best-product {
+    background-size: auto 17px;
+  }
+
+  .best-product__wrapper {
+    width: 668px;
+    margin: 0 auto;
+    padding: 40px 50px 52px 50px;
+  }
+
+  .best-product__description-wrapper {
+    width: 292px;
+  }
+
+  .best-product__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .best-product__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .best-product__subtitle {
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .best-product__subtitle-hyphenation {
+    display: block;
+  }
+
+  .best-product__description {
+    margin: 60px 0 48px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .best-product__image {
+    position: absolute;
+    margin: 0;
+    top: 150px;
+    right: 50px;
+    width: 334px;
+    height: 404px;
+  }
+
+  .best-product__price {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .best-product {
+    background-size: auto 23px;
+  }
+
+  .best-product__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+  }
+
+  .best-product__description-wrapper {
+    margin: 0 0 73px 175px;
+  }
+
+  .best-product__header {
+    position: relative;
+    z-index: 2;
+    margin-top: 115px;
+    width: 688px;
+  }
+
+  .best-product__image {
+    z-index: 1;
+    width: 525px;
+    height: 636px;
+    top: 54px;
+    right: 50px;
+  }
+
+  .best-product__title {
+    order: 2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .best-product__subtitle {
+    order: 1;
+  }
 }
