@@ -155,9 +155,9 @@
   border-radius: 0%;
 }
 .text-field {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .text-field:hover .text-field__input,
 .text-field:focus .text-field__input,
@@ -175,6 +175,9 @@
   font-size: 17px;
   line-height: 18px;
 }
+.text-field__label--contacts {
+  color: #63d1bb;
+}
 .text-field__input {
   font-family: inherit;
   font-size: 17px;
@@ -186,10 +189,9 @@
 }
 .text-field__input--additional-info {
   border: 2px solid #000;
-  margin: 22px 0 17px 0;
   padding-left: 17px;
   width: 100%;
-  height: 142px;
+  box-sizing: border-box;
 }
 .text-field__icon {
   position: absolute;
@@ -201,6 +203,15 @@
   .text-field {
     display: flex;
     flex-direction: row;
+  }
+  .text-field__label--contacts {
+    position: absolute;
+    left: -167px;
+  }
+}
+@media (min-width: 1150px) {
+  .text-field__label--contacts {
+    left: -177px;
   }
 }
 .social__list {
@@ -939,10 +950,12 @@
   line-height: 16px;
 }
 .order-form__fieldset {
+  position: relative;
   border: 0;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  padding: 17px 0;
+}
+.order-form__fieldset--additional-info {
+  padding-top: 22px;
 }
 .order-form__description {
   font-size: 13px;
@@ -994,14 +1007,16 @@
     font-size: 17px;
     line-height: 30px;
   }
-  .order-form__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+  .order-form__fieldset {
+    margin-left: 167px;
   }
-  .order-form__wrapper--checkboxes,
-  .order-form__wrapper--phone,
-  .order-form__wrapper--email {
+  .order-form__fieldset--checkboxes,
+  .order-form__fieldset--contacts {
     background-color: #f1f1f1;
+  }
+  .order-form__legend {
+    position: absolute;
+    left: -167px;
   }
   .order-form__radios,
   .order-form__checkboxes {
@@ -1024,6 +1039,12 @@
 @media (min-width: 1150px) {
   .order-form__main-wrapper {
     width: 1050px;
+  }
+  .order-form__fieldset {
+    margin-left: 177px;
+  }
+  .order-form__legend {
+    left: -177px;
   }
   .order-form__description {
     width: 702px;
@@ -1276,7 +1297,6 @@
   width: 100%;
 }
 .tutorial__wrapper {
-  position: relative;
   margin: 0 auto 58px auto;
   width: 262px;
   border: 1px solid #ececec;
@@ -1292,16 +1312,14 @@
   background-repeat: no-repeat;
   background-position: top 10px left 35px;
 }
-.tutorial__video {
-  background-image: url("../img/video-mobile.jpg");
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 150px;
+.tutorial__video-wrapper {
+  position: relative;
 }
-.tutorial__video-play-icon {
+.tutorial__play-icon {
   position: absolute;
-  top: 30%;
-  left: 31%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .tutorial__description {
   font-size: 13px;
@@ -1324,51 +1342,49 @@
   }
   .tutorial__video {
     order: 1;
-    background-image: url("../img/video-tablet.jpg");
     width: 668px;
     height: 455px;
   }
-  .tutorial__video-play-icon {
-    order: 2;
-    top: 27%;
-    left: 43%;
-  }
   .tutorial__title {
-    order: 3;
+    order: 2;
     font-size: 20px;
     margin: 41px 0 24px 0;
     padding-left: 107px;
   }
   .tutorial__description {
-    order: 4;
+    order: 3;
     font-size: 15px;
     line-height: 30px;
     margin: 0 34px 40 40px;
   }
   .tutorial__order-button {
-    order: 5;
+    order: 4;
     margin: 0 42px 46px 42px;
   }
 }
 @media (min-width: 1150px) {
   .tutorial__wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     width: 1050px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "video title" "video description" "video button";
   }
-  .tutorial__video {
-    position: absolute;
+  .tutorial__video-wrapper {
+    grid-area: video;
   }
   .tutorial__title {
-    padding: 56px 110px 0 0;
-    margin-left: 761px;
-    background-position: top 10px left 0;
+    grid-area: title;
+    padding: 56px 0 0 0;
+    background-position: top 10px;
+    margin: 47px 0 0 79px;
   }
   .tutorial__description {
-    margin-left: 761px;
+    grid-area: description;
+    margin: 27px 0 51px 79px;
   }
   .tutorial__order-button {
-    margin: 51px 42px 24px 761px;
+    grid-area: button;
+    margin-left: 79px;
   }
 }
 .welcome-group__wrapper {
