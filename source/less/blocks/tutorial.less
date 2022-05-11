@@ -1,18 +1,113 @@
 .tutorial {
+  width: 100%;
+}
+
+.tutorial__wrapper {
+  position: relative;
+  margin: 0px auto 58px auto;
+  width: 262px;
   border: 1px solid @light-grey;
-  padding: 21px 45px 51px 45px;
+  box-sizing: border-box;
 }
 
 .tutorial__title {
   .bold-middle-big-font;
+  padding: 0 44px 0 91px;
+  margin: 21px 0 26px 0;
+  background-image: url("../img/video-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px left 35px;
+}
+
+.tutorial__video {
+  background-image: url("../img/video-mobile.jpg");
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 150px;
+}
+
+.tutorial__video-play-icon {
+  position: absolute;
+  top: 30%;
+  left: 31%;
 }
 
 .tutorial__description {
   .small-font;
   color: @light-black;
-  margin: 0 0 59px 0;
+  margin-left: 34px;
 }
 
 .tutorial__order-button {
-  padding: 0 23px;
+  display: block;
+  width: auto;
+  margin: 0 34px 33px 34px;
+  padding: 18px 11px;
+  border: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .tutorial__wrapper {
+    display: flex;
+    width: 668px;
+    flex-direction: column;
+  }
+
+  .tutorial__video {
+    order: 1;
+    background-image: url("../img/video-tablet.jpg");
+    width: 668px;
+    height: 455px;
+  }
+
+  .tutorial__video-play-icon {
+    order: 2;
+    top: 27%;
+    left: 43%;
+  }
+
+  .tutorial__title {
+    order: 3;
+    font-size: 20px;
+    margin: 41px 0 24px 0;
+    padding-left: 107px;
+  }
+
+  .tutorial__description {
+    order: 4;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 34px 40 40px;
+  }
+
+  .tutorial__order-button {
+    order: 5;
+    margin: 0 42px 46px 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tutorial__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+  }
+
+  .tutorial__video {
+    position: absolute;
+  }
+
+  .tutorial__title {
+    padding: 56px 110px 0 0;
+    margin-left: 761px;
+    background-position: top 10px left 0;
+  }
+
+  .tutorial__description {
+    margin-left: 761px;
+  }
+
+  .tutorial__order-button {
+    margin: 51px 42px 24px 761px;
+  }
 }
