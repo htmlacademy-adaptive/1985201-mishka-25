@@ -88,7 +88,9 @@
             форму заказа и мы свяжемся с вами,
             чтобы уточнить детали.
           </p>
-          <form class="order-form__form" action="https://echo.htmlacademy.ru/" method="post" class="order-form__fields">
+          <form class="order-form__fields" action="https://echo.htmlacademy.ru/" method="post">
+            <!--Прочитала, что legend это первый элемент в fieldset и div в этом случае нельзя использовать, но без div, просто с fieldset - не выходит ничего,
+            элементы не становятся в нужном порядке... без див не понимаю, как сделать... и fieldset убирать нельзя-->
             <fieldset class="order-form__fieldset">
               <div class="order-form__wrapper order-form__wrapper--radios">
                 <legend class="order-form__legend">
