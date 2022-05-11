@@ -19,8 +19,13 @@
 }
 
 .order-form__fieldset {
+  position: relative;
   border: 0;
-  .clear-list;
+  padding: 17px 0;
+
+  &--additional-info {
+    padding-top: 22px;
+  }
 }
 
 .order-form__description {
@@ -80,15 +85,18 @@
     line-height: 30px;
   }
 
-  .order-form__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+  .order-form__fieldset {
+    margin-left: 167px;
 
     &--checkboxes,
-    &--phone,
-    &--email {
+    &--contacts {
       background-color: @grey;
     }
+  }
+
+  .order-form__legend {
+    position: absolute;
+    left: -167px;
   }
 
   .order-form__radios,
@@ -117,6 +125,14 @@
 @media (min-width: @desktop-width) {
   .order-form__main-wrapper {
     width: 1050px;
+  }
+
+  .order-form__fieldset {
+    margin-left: 177px;
+  }
+
+  .order-form__legend {
+    left: -177px;
   }
 
   .order-form__description {
