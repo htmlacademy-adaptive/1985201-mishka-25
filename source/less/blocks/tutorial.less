@@ -1,18 +1,109 @@
 .tutorial {
+  width: 100%;
+}
+
+.tutorial__wrapper {
+  margin: 0 auto 58px auto;
+  width: 262px;
   border: 1px solid @light-grey;
-  padding: 21px 45px 51px 45px;
+  box-sizing: border-box;
 }
 
 .tutorial__title {
   .bold-middle-big-font;
+  padding: 0 44px 0 91px;
+  margin: 21px 0 26px 0;
+  background-image: url("../img/video-icon.svg");
+  background-repeat: no-repeat;
+  background-position: top 10px left 35px;
+}
+
+.tutorial__video-wrapper {
+  position: relative;
+}
+
+.tutorial__play-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tutorial__description {
   .small-font;
   color: @light-black;
-  margin: 0 0 59px 0;
+  margin-left: 34px;
 }
 
 .tutorial__order-button {
-  padding: 0 23px;
+  display: block;
+  width: auto;
+  margin: 0 34px 33px 34px;
+  padding: 18px 11px;
+  border: 2px solid #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .tutorial__wrapper {
+    display: flex;
+    width: 668px;
+    flex-direction: column;
+  }
+
+  .tutorial__video {
+    order: 1;
+    width: 668px;
+    height: 455px;
+  }
+
+  .tutorial__title {
+    order: 2;
+    font-size: 20px;
+    margin: 41px 0 24px 0;
+    padding-left: 107px;
+  }
+
+  .tutorial__description {
+    order: 3;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 34px 40 40px;
+  }
+
+  .tutorial__order-button {
+    order: 4;
+    margin: 0 42px 46px 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tutorial__wrapper {
+    display: grid;
+    width: 1050px;
+    grid-template-rows: 1fr;
+    grid-template-areas: "video title"
+      "video description"
+      "video button";
+  }
+
+  .tutorial__video-wrapper {
+    grid-area: video;
+  }
+
+  .tutorial__title {
+    grid-area: title;
+    padding: 56px 0 0 0;
+    background-position: top 10px;
+    margin: 47px 0 0 79px;
+  }
+
+  .tutorial__description {
+    grid-area: description;
+    margin: 27px 0 51px 79px;
+  }
+
+  .tutorial__order-button {
+    grid-area: button;
+    margin-left: 79px;
+  }
 }
