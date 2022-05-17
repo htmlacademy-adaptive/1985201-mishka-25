@@ -34,11 +34,16 @@
 
   .footer__logo {
     display: block;
-    background-image: url("../img/mishka-logo-simple.svg");
-    width: 86px;
-    height: 34px;
-    background-repeat: no-repeat;
-    background-position: center;
+    text-decoration: none;
+    color: @black;
+
+    &:hover {
+      color: @email-hover-active-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .footer__copyright {
