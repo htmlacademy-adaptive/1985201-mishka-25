@@ -2,6 +2,8 @@
   .clear-list;
   display: flex;
   justify-content: center;
+  gap: 29px;
+  align-items: center;
   border-bottom: 1px solid @grey-border-color;
   padding-bottom: 28px;
 }
@@ -11,16 +13,13 @@
 }
 
 .social__link {
+  display: block;
   text-decoration: none;
   color: @social-color;
+}
 
-  &--vkontakte {
-    margin-right: 29px;
-  }
-
-  &--telegram {
-    margin-left: 29px;
-  }
+.social__link-icon {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {

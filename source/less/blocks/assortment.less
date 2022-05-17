@@ -7,14 +7,15 @@
   .clear-list;
 }
 
-.assortment__item {
+.assortment__link {
+  display: block;
   position: relative;
   background-color: @light-green;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  color: @white;
   padding: 24px 0 31px 30px;
+  color: @white;
 
   &--interior {
     background-image: url("../img/assortment-interior.svg");
@@ -41,9 +42,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .assortment__item {
+  .assortment__link {
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 40px;
 
     &:hover {
       top: -5px;
@@ -55,6 +57,10 @@
 
 @media (min-width: @desktop-width) {
   .assortment__wrapper {
-    width: 1150px;
+    max-width: @desktop-width;
+  }
+
+  .assortment__link {
+    padding-bottom: 50px;
   }
 }
