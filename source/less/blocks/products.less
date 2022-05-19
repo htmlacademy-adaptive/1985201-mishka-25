@@ -58,16 +58,20 @@
 }
 
 .products__add-to-cart-button {
+  position: relative;
   display: block;
   text-decoration: none;
   padding-top: 22px;
   color: @black;
   cursor: pointer;
   font-weight: 700;
-  background-image: url("../img/cart.svg");
-  background-repeat: no-repeat;
-  background-position: right 0 top 22px;
   border-top: 1px solid @light-grey;
+}
+
+.products__cart-icon {
+  position: absolute;
+  right: 0;
+  top: 22px;
 }
 
 @media (min-width: @tablet-width) {
