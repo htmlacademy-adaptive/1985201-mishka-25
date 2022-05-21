@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../source/img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <base href="https://htmlacademy-adaptive.github.io/1985201-mishka-25/13/">
+</head>
+  <body class="page__body">
+    <header>
+      <nav class="navigation navigation--closed navigation--nojs">
+        <div class="navigation__wrapper">
+          <a class="navigation__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+              <img class="navigation__logo-image" src="img/mishka-logo-simple.svg" width="85" height="34" alt="Магазин товаров ручной работы «Мишка».">
+            </picture>
+          </a>
+          <button class="navigation__menu-toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню.
+            </span>
+          </button>
+          <ul class="navigation__list navigation__list--main">
+            <li class="navigation__item navigation__item--catalog">
+              <a class="navigation__link navigation__link--catalog" href="catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--order">
+              <a class="navigation__link navigation__link--order" href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--actions">
+            <li class="navigation__item navigation__item--search">
+              <a class="navigation__link navigation__link--search" href="#">
+                <span class="navigation__search-label">
+                  Поиск по сайту
+                </span>
+                <svg class="navigation__icon navigation__icon--search" width="18" height="18">
+                  <use href="img/sprite.svg#search"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--cart">
+              <a class="navigation__link navigation__link--cart" href="#">
+                <span>
+                  Корзина: пока пуста
+                </span>
+                <svg class="navigation__icon navigation__icon--cart" width="21" height="18">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--offers">
+            <li class="navigation__item navigation__item--new-goods">
+              <a class="navigation__link navigation__link--new-goods" href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="navigation__item navigation__item--sale">
+              <a class="navigation__link navigation__link--sale" href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+          <p class="navigation__disclaimer">
+            Бесплатная доставка по России
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="main-container__background-wrapper">
+        <section class="welcome-group welcome-group--solid-background">
+          <a class="welcome-group__link" href="#">
+            <h1 class="welcome-group__title welcome-group__title--solid-background">
+              Каталог товаров
+            </h1>
+          </a>
+        </section>
+      </div>
+      <section class="products">
+        <h2 class="visually-hidden">
+          Карточки товаров.
+        </h2>
+        <ul class="products__list">
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/bunny-product-desktop.jpg 1x, img/bunny-product-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/bunny-product-tablet.jpg 1x, img/bunny-product-tablet@2x.jpg 2x">
+                <img class="products__image" width="260" height="195" src="img/bunny-product-mobile.jpg" srcset="img/bunny-product-mobile@2x.jpg 2x" alt="Игрушка вязаная «Зайчик-попрыгайчик»">
+              </picture>
+            </a>
+            <div class="products__text-description">
+              <a class="products__link" href="#">
+                <h3 class="products__title">
+                  Зайчик-попрыгайчик
+                </h3>
+              </a>
+              <p class="products__description">
+                Рост 30 см, вес 200 г
+              </p>
+              <a class="products__add-to-cart-button" href="#">
+                <span class="products__price">
+                  1 200 руб.
+                </span>
+                <span class="visually-hidden">
+                  Добавить позицию в корзину.
+                </span>
+                <svg class="products__cart-icon" width="21" height="18">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/laundry-basket-product-desktop.jpg 1x, img/laundry-basket-product-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/laundry-basket-product-tablet.jpg 1x, img/laundry-basket-product-tablet@2x.jpg 2x">
+                <img class="products__image" width="260" height="195" src="img/laundry-basket-product-mobile.jpg" srcset="img/laundry-basket-product-mobile@2x.jpg 2x" alt="Продукт «Корзинка для белья»">
+              </picture>
+            </a>
+            <div class="products__text-description">
+              <a class="products__link" href="#">
+                <h3 class="products__title">
+                  Корзинка для белья
+                </h3>
+              </a>
+              <p class="products__description">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <a class="products__add-to-cart-button" href="#">
+                <span class="products__price">
+                  690 руб.
+                </span>
+                <span class="visually-hidden">
+                  Добавить позицию в корзину.
+                </span>
+                <svg class="products__cart-icon" width="21" height="18">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="products__card">
+            <a class="products__link" href="#">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/big-toy-basket-product-desktop.jpg 1x, img/big-toy-basket-product-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/big-toy-basket-product-tablet.jpg 1x, img/big-toy-basket-product-tablet@2x.jpg 2x">
+                <img class="products__image" width="260" height="195" src="img/big-toy-basket-product-mobile.jpg" srcset="img/big-toy-basket-product-mobile@2x.jpg 2x" alt="Продукт «Большая корзинка для игрушек»">
+              </picture>
+            </a>
+            <div class="products__text-description">
+            <a class="products__link" href="#">
+              <h3 class="products__title products__title--big-toy-basket">
+                Большая корзинка<br>
+                для игрушек
+              </h3>
+            </a>
+            <p class="products__description">
+              Диаметр 30 см, высота 30 см
+            </p>
+            <a class="products__add-to-cart-button" href="#">
+              <span class="products__price">
+                1 500 руб.
+              </span>
+              <span class="visually-hidden">
+                Добавить позицию в корзину.
+              </span>
+              <svg class="products__cart-icon" width="21" height="18">
+                <use href="img/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </div>
+          </li>
+        </ul>
+      </section>
+      <section class="tutorial">
+        <div class="tutorial__wrapper">
+          <h2 class="tutorial__title">
+            Процесс<br class="tutorial__hyphenation">
+            производства
+          </h2>
+          <div class="tutorial__video-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/video-desktop.jpg 1x, img/video-desktop.webp 1x, img/video-desktop@2x.jpg 2x, img/video-desktop@2x.webp 2x">
+              <img class="tutorial__video" width="260" height="150" src="img/video-mobile.jpg" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.jpg 2x, img/video-mobile@2x.webp 2x" alt="Процесс производства в видеоформате.">
+            </picture>
+            <svg class="tutorial__play-icon" width="101" height="77">
+              <use href="img/sprite.svg#play-icon"></use>
+            </svg>
+          </div>
+          <p class="tutorial__description">
+            По просьбам наших любимых
+            фолловеров мы сняли для вас
+            подробное видео о том, как
+            появляются наши товары.
+          </p>
+          <div class="tutorial__order-button-wrapper">
+            <a class="button tutorial__order-button" href="#">
+              Сделать заказ
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="index.html">
+          <span class="visually-hidden">Магазин товаров ручной работы «Мишка».</span>
+          <svg class="footer__logo-image" width="102" height="34">
+            <use href="img/sprite.svg#mishka-logo-footer"></use>
+          </svg>
+        </a>
+        <div class="social footer__social">
+          <h3 class="visually-hidden">
+            Присоединяйтесь к нам в социальных сетях.
+          </h3>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">
+                  Мы в Вконтакте.
+                </span>
+                <svg class="social__link-icon" width="27" height="18">
+                  <use href="img/sprite.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">
+                  Мы в Ютубе.
+                </span>
+                <svg class="social__link-icon" width="24" height="20">
+                  <use href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">
+                  Мы в Телеграме.
+                </span>
+                <svg class="social__link-icon" width="20" height="18">
+                  <use href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">
+            Разработано
+          </p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">
+              HTML Academy.
+            </span>
+            <svg class="copyright__icon" width="27" height="35">
+              <use href="img/sprite.svg#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--closed">
+      <div class="modal__container">
+        <h3 class="modal__title">
+          Добавить<br class="modal__hyphenation">
+          в корзину
+        </h3>
+        <p class="modal__description">
+          Выберите размер:
+        </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__fieldset">
+            <legend class="visually-hidden">
+              3 размера на выбор.
+            </legend>
+            <ul class="modal__radios">
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="s-size" checked>
+                  <span class="modal-radio__mark">S</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="m-size">
+                  <span class="modal-radio__mark">M</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="l-size">
+                  <span class="modal-radio__mark">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__submit-button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
