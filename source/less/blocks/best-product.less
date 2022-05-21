@@ -7,21 +7,22 @@
 
 .best-product__wrapper {
   position: relative;
-  width: 260px;
+  width: @mobile-width-padding30;
   margin: 0 auto;
-  padding: 31px 30px 36px 30px;
+  padding: 31px 30px 40px 30px;
 }
 
 .best-product__title {
-  .bold-big-font;
+  .font-700-25-30;
   margin: 0;
 }
 
 .best-product__subtitle {
-  .bold-middle-middle-font;
+  .font-700-17-24;
   text-transform: uppercase;
   color: @light-green;
   margin-top: 3px;
+  margin-bottom: 15px;
 }
 
 .best-product__subtitle-hyphenation {
@@ -29,10 +30,10 @@
 }
 
 .best-product__description {
-  font-size: 15px;
-  line-height: 24px;
+  .font-15-24;
   color: @light-black;
-  margin: 17px 0 28px 0;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 .best-product__image {
@@ -43,10 +44,15 @@
 
 .best-product__price {
   display: block;
-  .bold-middle-big-font;
+  .font-700-17-24;
   text-align: center;
   color: @light-black;
   margin-bottom: 24px;
+}
+
+.best-product__order-button {
+  padding: 15px 70px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -55,9 +61,9 @@
   }
 
   .best-product__wrapper {
-    width: 668px;
+    width: @tablet-width-padding50;
     margin: 0 auto;
-    padding: 40px 50px 52px 50px;
+    padding: 42px 50px 66px 50px;
   }
 
   .best-product__description-wrapper {
@@ -70,13 +76,13 @@
   }
 
   .best-product__title {
-    font-size: 43px;
-    line-height: 50px;
+    .font-700-43-50;
   }
 
   .best-product__subtitle {
     line-height: 17px;
     text-align: center;
+    margin: 6px 28px 0 0;
   }
 
   .best-product__subtitle-hyphenation {
@@ -84,22 +90,21 @@
   }
 
   .best-product__description {
-    margin: 60px 0 48px 0;
-    font-size: 17px;
-    line-height: 30px;
+    margin: 38px 0 48px 0;
+    .font-17-30;
   }
 
   .best-product__image {
     position: absolute;
     margin: 0;
-    top: 150px;
+    bottom: 66px;
     right: 50px;
     width: 334px;
     height: 404px;
   }
 
   .best-product__price {
-    margin-top: 20px;
+    margin: 58px 0 32px -2px;
     font-size: 20px;
   }
 }
@@ -110,19 +115,28 @@
   }
 
   .best-product__wrapper {
-    width: 1050px;
+    width: @desktop-width-padding50;
     margin: 0 auto;
   }
 
   .best-product__description-wrapper {
-    margin: 0 0 73px 175px;
+    margin: 0 0 33px 175px;
+  }
+
+  .best-product__description {
+    margin-bottom: 58px;
+  }
+
+  .best-product__price {
+    margin-top: 112px;
   }
 
   .best-product__header {
     position: relative;
     z-index: 2;
-    margin-top: 115px;
-    width: 688px;
+    margin-left: 36px;
+    margin-top: 74px;
+    width: @tablet-width-padding50;
   }
 
   .best-product__image {
@@ -141,5 +155,6 @@
 
   .best-product__subtitle {
     order: 1;
+    margin-left: 10px;
   }
 }

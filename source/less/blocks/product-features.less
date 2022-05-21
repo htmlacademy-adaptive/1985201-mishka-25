@@ -1,14 +1,32 @@
 .product-features {
   color: @light-black;
+  margin-top: 0;
 }
 
 .product-features__item {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 13px 0;
-  border-bottom: 1px solid @light-grey;
+  grid-template-columns: 1.2fr 2fr;
+  border-bottom: 1px solid @light-gray;
+  padding: 10px 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
 }
 
 .product-features__info {
+  .font-15-20;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .product-features__item {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .product-features__item{
+    &--height {
+      padding: 9px 0;
+    }
+  }
 }

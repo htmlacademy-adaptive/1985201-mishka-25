@@ -11,10 +11,8 @@
   display: block;
   position: relative;
   background-color: @light-green;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
-  padding: 24px 0 31px 30px;
+  .font-700-19-24;
+  padding: 24px 90px 31px 30px;
   color: @white;
 
   &--interior {
@@ -43,14 +41,21 @@
   }
 
   .assortment__link {
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 40px;
+    .font-700-20-30;
+    padding: 24px 90px 44px 36px;
 
     &:hover {
       top: -5px;
       padding: 24px 0 36px 30px;
       margin-bottom: -5px;
+    }
+
+    &--interior {
+      background-position: top 28px right 36px;
+    }
+
+    &--toys {
+      background-position: top 30px right 32px;
     }
   }
 }

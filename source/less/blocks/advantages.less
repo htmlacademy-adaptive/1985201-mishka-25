@@ -1,11 +1,12 @@
 .advantages {
-  padding: 31px 30px 58px 30px;
-  width: 260px;
+  padding: 31px 30px 38px 30px;
+  width: @mobile-width-padding30;
   margin: 0 auto;
 }
 
 .advantages__title {
-  .bold-big-font;
+  .font-700-25-30;
+  margin: 0;
   margin-bottom: 28px;
 }
 
@@ -14,7 +15,7 @@
 }
 
 .advantages__item {
-  .bold-middle-middle-font;
+  .font-700-17-20;
   margin-bottom: 10px;
 }
 
@@ -23,38 +24,38 @@
   color: @light-green;
 
   &--flower {
-    margin-bottom: 16px;
+    margin: 0 0 16px 8px;
   }
 
   &--money {
-    margin: 26px 0 30px 0;
+    margin: 30px 0 28px 0;
   }
 
   &--heart {
-    margin: 35px 0 21px 0;
+    margin: 35px 0 21px 6px;
   }
 
   &--yarn {
-    margin: 32px 0 17px 0;
+    margin: 32px 0 17px 2px;
   }
 
   &--rocket {
-    margin: 33px 0 26px 0;
+    margin: 33px 0 26px -4px;
   }
 
   &--gift {
-    margin: 32px 0 20px 0;
+    margin: 32px 0 20px 2px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
-    width: 668px;
+    width: @tablet-width-padding50;
+    padding: 4px 0 64px 0;
   }
 
   .advantages__title {
-    font-size: 43px;
-    line-height: 50px;
+    .font-700-43-50;
     margin: 55px 0 41px 0;
   }
 
@@ -67,27 +68,27 @@
   }
 
   .advantages__item {
-    font-size: 20px;
-    line-height: 22px;
+    .font-700-20-22;
 
     &--flower {
       grid-area: flower;
-      margin-bottom: 57px;
+      margin-bottom: 50px;
     }
 
     &--money {
       grid-area: money;
-      margin-bottom: 63px;
+      margin-top: -5px;
+      margin-bottom: 66px;
     }
 
     &--heart {
       grid-area: heart;
-      margin-bottom: 25px;
+      margin: -4px 0px 20px 2px;
     }
 
     &--yarn {
       grid-area: yarn;
-      margin-bottom: 59px;
+      margin: 2px 0 61px 0;
     }
 
     &--rocket {
@@ -97,6 +98,7 @@
 
     &--gift {
       grid-area: gift;
+      margin-top: -7px;
     }
   }
 
@@ -123,13 +125,13 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    width: 1050px;
+    width: 690px;
+    padding-bottom: 70px;
   }
 
   .advantages__title {
-    font-size: 53px;
-    line-height: 57px;
-    margin: 68px 0 39px 0;
+    .font-700-53-57;
+    margin: 60px 0 39px 0;
   }
 
   .advantages__icon {
@@ -143,12 +145,12 @@
   }
 
   .advantages__item {
-    &--heart {
-      margin-bottom: 32px;
+    &--money {
+      margin-top: -2px;
     }
 
-    &--yarn {
-      margin-bottom: 60px;
+    &--heart {
+      margin-left: -2px;
     }
   }
 }

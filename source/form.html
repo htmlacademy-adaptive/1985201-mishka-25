@@ -16,7 +16,7 @@
           <a class="navigation__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 786px)" srcset="img/mishka-logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
               <img class="navigation__logo-image" src="img/mishka-logo-simple.svg" width="85" height="34" alt="Магазин товаров ручной работы «Мишка».">
             </picture>
           </a>
@@ -191,7 +191,7 @@
                 ФИО
               </legend>
               <div class="order-form__client-names">
-                <div class="order-form__client-name">
+                <div class="order-form__client-name order-form__client-name--name">
                   <label class="text-field">
                     <span class="text-field__label">
                       Имя:
@@ -199,7 +199,7 @@
                     <input class="text-field__input" type="text" name="client-name" placeholder="Введите ваше имя*" required>
                   </label>
                 </div>
-                <div class="order-form__client-name">
+                <div class="order-form__client-name order-form__client-name--surname">
                   <label class="text-field">
                     <span class="text-field__label">
                       Фамилия:
@@ -207,7 +207,7 @@
                     <input class="text-field__input" type="text" name="client-surname" placeholder="Укажите фамилию*" required>
                   </label>
                 </div>
-                <div class="order-form__client-name">
+                <div class="order-form__client-name order-form__client-name--patronymic">
                   <label class="text-field">
                     <span class="text-field__label">
                       Отчество:
@@ -227,7 +227,7 @@
                     <span class="order-form__legend order-form__legend--phone text-field__label text-field__label--contacts">
                       Тел
                     </span>
-                    <input class="text-field__input text-field__input--contacts" type="tel" name="client-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    <input class="text-field__input text-field__input--phone" type="tel" name="client-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                     <svg class="text-field__icon" width="25" height="24">
                       <use href="img/sprite.svg#phone"></use>
                     </svg>
@@ -238,7 +238,7 @@
                     <span class="order-form__legend order-form__legend--email text-field__label text-field__label--contacts">
                       E-mail
                     </span>
-                    <input class="text-field__input text-field__input--contacts" type="email" name="client-email" placeholder="Ваш Email*" required>
+                    <input class="text-field__input text-field__input--email" type="email" name="client-email" placeholder="Ваш Email*" required>
                     <svg class="text-field__icon" width="32" height="21">
                       <use href="img/sprite.svg#email"></use>
                     </svg>
@@ -273,7 +273,7 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="index.html">
           <span class="visually-hidden">Магазин товаров ручной работы «Мишка».</span>
           <svg class="footer__logo-image" width="102" height="34">
             <use href="img/sprite.svg#mishka-logo-footer"></use>
@@ -318,7 +318,7 @@
         </div>
         <div class="footer__copyright copyright">
           <p class="copyright__text">
-            Разработано:
+            Разработано
           </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">
@@ -331,6 +331,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

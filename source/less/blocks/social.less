@@ -1,11 +1,14 @@
 .social__list {
   .clear-list;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
   justify-content: center;
-  gap: 29px;
+  gap: 34px;
   align-items: center;
-  border-bottom: 1px solid @grey-border-color;
+  border-bottom: 1px solid @gray-border-color;
   padding-bottom: 28px;
+  margin: 0 auto;
 }
 
 .social-item {
@@ -15,10 +18,14 @@
 .social__link {
   display: block;
   text-decoration: none;
-  color: @social-color;
+  fill: @social-color;
+
+  &--youtube {
+    margin-left: -2px;
+  }
 
   &:hover {
-    color: @email-hover-active-color;
+    fill: @email-hover-active-color;
   }
 
   &:active {
@@ -34,5 +41,15 @@
   .social__list {
     border: 0;
     padding: 0;
+    gap: 38px;
+  }
+
+  .social__link {
+    margin-top: -5px;
+    margin-left: -2px;
+
+    &--youtube {
+      margin-left: -6px;
+    }
   }
 }

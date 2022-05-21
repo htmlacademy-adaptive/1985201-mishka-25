@@ -3,14 +3,22 @@
 }
 
 .tutorial__wrapper {
-  margin: 0 auto 58px auto;
+  margin: 0 auto 56px auto;
   width: 262px;
-  border: 1px solid @light-grey;
+  border: 1px solid @light-gray;
   box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 0px 6px 10px @black01;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px @black01;
+  }
 }
 
 .tutorial__title {
-  .bold-middle-big-font;
+  .font-700-17-24;
   padding: 0 44px 0 91px;
   margin: 21px 0 26px 0;
   background-image: url("../img/video-icon.svg");
@@ -22,60 +30,80 @@
   position: relative;
 }
 
+.tutorial__video {
+  display: block;
+}
+
 .tutorial__play-icon {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  fill: @light-green;
+
+  &:hover {
+    width: calc(@play-icon-width*1.2);
+    height: calc(@play-icon-height*1.2);
+  }
+
+  &:active {
+    width: calc(@play-icon-width*0.8);
+    height: calc(@play-icon-height*0.8);
+    fill: @tutorial-light-green;
+  }
 }
 
 .tutorial__description {
-  .small-font;
+  .font-13-24;
   color: @light-black;
-  margin-left: 34px;
+  margin: 38px 0 40px 34px;
 }
 
 .tutorial__order-button {
   display: block;
   width: auto;
   margin: 0 34px 33px 34px;
-  padding: 18px 11px;
-  border: 2px solid #444444;
-}
-
-.tutorial__video {
-  display: block;
+  padding: 14px 11px;
+  border: 2px solid @light-black;
 }
 
 @media (min-width: @tablet-width) {
   .tutorial__wrapper {
     display: flex;
-    width: 668px;
+    width: @tablet-width-padding50;
     flex-direction: column;
+    margin-bottom: 64px;
   }
 
   .tutorial__video {
     order: 1;
-    width: 668px;
+    width: @tablet-width-padding50;
     height: 455px;
+  }
+
+  .tutorial__hyphenation {
+    display: none;
   }
 
   .tutorial__title {
     order: 2;
     font-size: 20px;
-    margin: 41px 0 24px 0;
+    margin: 37px 0 24px 0;
     padding-left: 107px;
+    background-position: top -2px left 40px;
   }
 
   .tutorial__description {
     order: 3;
-    font-size: 15px;
-    line-height: 30px;
-    margin: 0 34px 40 40px;
+    .font-15-30;
+    margin: 0 34px 40px 40px;
+  }
+
+  .tutorial__order-button-wrapper {
+    order: 4;
   }
 
   .tutorial__order-button {
-    order: 4;
     margin: 0 42px 46px 42px;
   }
 }
@@ -83,31 +111,48 @@
 @media (min-width: @desktop-width) {
   .tutorial__wrapper {
     display: grid;
-    width: 1050px;
-    grid-template-rows: 1fr;
+    width: @desktop-width-padding50;
     grid-template-areas: "video title"
       "video description"
       "video button";
+      margin-bottom: 100px;
   }
 
   .tutorial__video-wrapper {
     grid-area: video;
   }
 
+  .tutorial__video {
+    position: relative;
+    width: 682px;
+  }
+
   .tutorial__title {
     grid-area: title;
-    padding: 56px 0 0 0;
-    background-position: top 10px left 0;
+    padding: 46px 0 0 0;
+    background-position: top -4px left 0;
     margin: 47px 0 0 79px;
+  }
+
+  .tutorial__hyphenation {
+    display: block;
   }
 
   .tutorial__description {
     grid-area: description;
-    margin: 27px 36px 51px 79px;
+    margin: 8px 36px 51px 79px;
+  }
+
+  .tutorial__order-button-wrapper {
+    height: auto;
+    width: 350px;
   }
 
   .tutorial__order-button {
+    .font-700-17-16;
     grid-area: button;
+    margin-top: -25px;
     margin-left: 79px;
+    padding: 14px 14px;
   }
 }
