@@ -1,24 +1,34 @@
 .copyright__text {
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 18px;
+  .font-700-19-18;
+  max-width: 130px;
   margin: 0;
 }
 
 .copyright__icon {
-  display: block;
+  display: inline-block;
+  margin-left: 26px;
 }
 
 .copyright__link {
+  display: flex;
+  color: @black;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
-  color: @light-green;
-  margin-left: 27px;
+  fill: @light-green;
+  max-width: 230px;
 
   &:hover {
-    color: @email-hover-active-color;
+    fill: @email-hover-active-color;
   }
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-top: -2px;
   }
 }

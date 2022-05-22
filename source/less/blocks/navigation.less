@@ -31,16 +31,27 @@
   display: block;
   width: auto;
   text-decoration: none;
+  .font-700-17-24;
   padding: 28px 59px 27px 76px;
   color: @black;
   box-shadow: none;
 
   &:hover {
-    opacity: 0.6;
+    color: @black06;
+
+    .navigation__icon--search,
+    .navigation__icon--cart {
+      fill: @light-green;
+    }
   }
 
   &:active {
-    opacity: 0.3;
+    color: @black03;
+
+    .navigation__icon--search,
+    .navigation__icon--cart {
+      opacity: 0.3;
+    }
   }
 
   &--search {
@@ -56,11 +67,11 @@
   position: absolute;
   top: 30px;
   left: 31px;
+  fill: @black02;
 }
 
 .navigation__item {
   display: block;
-  .bold-middle-big-font;
 }
 
 .navigation__item--new-goods,
@@ -148,8 +159,9 @@
   .navigation__list {
     width: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: end;
+    max-width: 450px;
 
     &--offers {
       display: none;
@@ -166,7 +178,9 @@
       background-color: transparent;
       width: 100%;
       order: 1;
-      margin: 0 auto;
+      margin-left: auto;
+      justify-content: end;
+      max-width: 750px;
     }
   }
 
@@ -180,16 +194,18 @@
     }
 
     &--cart {
-      padding: 33px 52px 32px 84px;
+      padding: 33px 50px 32px 82px;
       border-left: 1px solid @black01;
     }
 
     &--catalog {
+      .font-15-24;
       padding: 21px 20px 21px 50px;
     }
 
     &--order {
-      padding: 21px 20px 21px 20px;
+      .font-15-24;
+      padding: 21px 20px 21px 17px;
     }
   }
 
@@ -209,7 +225,7 @@
 
   .navigation__logo {
     top: 22px;
-    left: 105px;
+    left: 104px;
     margin-left: -56px;
   }
 
@@ -220,19 +236,22 @@
 
   .navigation__disclaimer {
     display: block;
+    .font-15-24;
     order: 3;
     margin: 0 50px 0 auto;
+    max-width: 300px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .navigation__wrapper {
-    width: 1150px;
+    width: @desktop-width;
     margin: 0 auto;
   }
 
   .navigation__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: end;
 
@@ -267,25 +286,30 @@
 
   .navigation__link {
     &--catalog {
+      .font-700-17-24;
       padding: 31px 36px 31px 50px;
       border-right: 1px solid @black01;
     }
 
     &--order {
+      .font-700-17-24;
       padding: 31px 10px 31px 35px;
     }
 
     &--new-goods {
+      .font-15-24;
       padding: 19px 5px 21px 51px;
     }
 
     &--sale {
-      padding: 19px 55px 21px 40px;
+      .font-15-24;
+      padding: 19px 55px 21px 58px;
     }
   }
 
   .navigation__disclaimer {
     order: 4;
+    max-width: 450px;
   }
 
   .navigation__logo {

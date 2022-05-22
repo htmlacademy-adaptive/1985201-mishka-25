@@ -1,6 +1,6 @@
 .footer {
-  background-color: @grey;
-  padding: 25px 30px 18px 30px;
+  background-color: @gray;
+  padding: 30px 30px 18px 30px;
 }
 
 .footer__wrapper {
@@ -15,13 +15,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 16px;
+  margin: 24px 0 0 -4px;
 }
 
 @media (min-width: @tablet-width) {
   .footer {
     padding: 51px 50px 58px 50px;
-    background-color: @grey;
+    background-color: @gray;
   }
 
   .footer__wrapper {
@@ -35,10 +35,9 @@
   .footer__logo {
     display: block;
     text-decoration: none;
-    color: @black;
 
     &:hover {
-      color: @email-hover-active-color;
+      fill: @email-hover-active-color;
     }
 
     &:active {
@@ -53,6 +52,6 @@
 
 @media (min-width: @desktop-width) {
   .footer__wrapper {
-    width: 1050px;
+    width: @desktop-width-padding50;
   }
 }

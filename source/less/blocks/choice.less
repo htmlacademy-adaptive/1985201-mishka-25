@@ -1,7 +1,7 @@
 .choice {
   display: flex;
   align-items: center;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
 
   input {
     &:checked + .choice__mark::after {
@@ -20,13 +20,17 @@
       border-color: @black03;
     }
   }
+
+  &--checkbox {
+    margin-bottom: 21px;
+  }
 }
 
 .choice__mark {
   position: relative;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 2px solid @light-black;
   margin-right: 18px;
@@ -53,20 +57,40 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: transparent;
-      width: 100px;
-      height: 100px;
+      width: 100%;
+      height: 100%;
+      background-size: 70%;
       border-radius: 0%;
     }
   }
 }
 
 @media (min-width: @tablet-width) {
+  .choice {
+    margin-bottom: 25px;
+  }
+
   .choice__hyphenation {
     display: none;
   }
 
   .choice__mark {
-    width: 52px;
-    height: 52px;
+    width: 47px;
+    height: 47px;
+
+    &--checkbox {
+      margin-right: 16px;
+    }
+  }
+
+  .choice__label {
+    .font-700-19-18;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .choice__label {
+    margin-left: 12px;
   }
 }

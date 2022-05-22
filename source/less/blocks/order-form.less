@@ -8,8 +8,8 @@
 
 .order-form__main-wrapper {
   margin: 0 auto;
-  width: 260px;
-  padding: 17px 30px 55px 23px;
+  width: @mobile-width-padding30;
+  padding: 4px 30px 52px 30px;
 }
 
 .order-form__legend {
@@ -18,7 +18,7 @@
   width: 100%;
   color: @light-green;
   text-transform: uppercase;
-  .bold-middle-smaller-font;
+  .font-700-17-16;
 
   &::after {
     content: "";
@@ -59,7 +59,7 @@
   position: relative;
   border: 0;
   margin: 0;
-  padding: 17px 0;
+  padding: 0;
 
   &--additional-info {
     padding-top: 22px;
@@ -67,17 +67,17 @@
 }
 
 .order-form__description {
-  .small-font;
+  .font-13-24;
 }
 
 .order-form__radios,
 .order-form__checkboxes {
   .clear-list;
-  .bold-middle-small-font;
+  .font-700-17-18;
 }
 
 .order-form__radios {
-  margin: 30px 0 31px 0;
+  margin: 32px 0 30px 0;
 }
 
 .order-form__checkboxes {
@@ -89,12 +89,15 @@
 }
 
 .order-form__client-name {
-  margin-top: 22px;
-}
+  margin-top: 28px;
 
-.order-form__phone-wrapper,
-.order-form__email-wrapper {
-  margin-top: 5px;
+  &--surname {
+    margin-top: 20px;
+  }
+
+  &--patronymic {
+    margin-top: 20px;
+  }
 }
 
 .order-form__phone,
@@ -104,9 +107,14 @@
 }
 
 .order-form__warning {
-  font-size: 14px;
-  line-height: 16px;
+  .font-14-16;
   margin-bottom: 30px;
+}
+
+.order-form__fieldset-wrapper {
+  &--contacts {
+    margin-top: 32px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -120,27 +128,66 @@
   }
 
   .order-form__description {
-    font-size: 17px;
-    line-height: 30px;
+    .font-17-30;
     margin: 0 50px 0 50px;
   }
 
   .order-form__fieldset {
     margin-left: 203px;
     padding: 50px 50px 50px 0;
+
+    &--radios {
+      padding-bottom: 23px;
+    }
+
+    &--fullname {
+      padding-top: 27px;
+      margin-left: 217px;
+    }
+
+    &--contacts {
+      padding: 12px 48px 12px 12px;
+    }
+
+    &--additional-info {
+      padding-top: 60px;
+      margin-left: 217px;
+    }
   }
 
   .order-form__fieldset-wrapper {
-    background-color: @grey;
+    background-color: @gray;
   }
 
   .order-form__legend {
     position: absolute;
-    left: -167px;
-    top: 25%;
+    left: -154px;
 
     &::after {
       display: none;
+    }
+
+    &--radios {
+      top: 30%;
+    }
+
+    &--checkboxes {
+      top: 21%;
+    }
+
+    &--fullname {
+      top: 16%;
+      left: -166px;
+    }
+
+    &--phone,
+    &--email {
+      left: -166px;
+    }
+
+    &--additional-info {
+      top: 44%;
+      left: -168px;
     }
   }
 
@@ -155,11 +202,12 @@
   .order-form__radios,
   .order-form__checkboxes {
     margin: 0;
+    margin-left: 16px;
   }
 
   .order-form__checkboxes {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.9fr;
   }
 
   .order-form__ending {
@@ -170,12 +218,17 @@
 
   .order-form__warning {
     order: 2;
+    .font-17-30;
+    margin: 0;
+    margin-top: 13px;
   }
 
   .order-form__submit-button {
     order: 1;
+    .font-700-17-16;
     width: auto;
-    padding: 18px 32px;
+    height: auto;
+    padding: 18px 30px;
   }
 }
 
@@ -184,14 +237,65 @@
     padding-top: 98px;
   }
 
+  .order-form__radios,
+  .order-form__checkboxes {
+    margin-left: 0;
+  }
+
   .order-form__fieldset {
     margin: 0 auto;
     padding: 50px 0;
     max-width: 700px;
+
+    &--radios {
+      margin: 0 auto;
+      padding: 50px 0 24px 0;
+    }
+
+    &--checkboxes {
+      margin: 0 auto;
+      padding: 50px 0 50px 86px;
+    }
+
+    &--fullname {
+      padding-top: 24px;
+    }
+
+    &--contacts {
+      padding-top: 14px;
+    }
+
+    &--additional-info {
+      padding-top: 20px;
+      padding-bottom: 48px;
+    }
   }
 
   .order-form__legend {
-    left: -112px;
+    &--radios {
+      top: 30%;
+      left: -114px;
+    }
+
+    &--checkboxes {
+      top: 28%;
+      left: -30px;
+    }
+
+    &--fullname {
+      top: 16%;
+      left: -114px;
+    }
+
+    &--phone,
+    &--email {
+      left: -114px;
+    }
+
+    &--additional-info {
+      top: 19%;
+      left: -116px;
+    }
   }
 
   .order-form__description {
@@ -201,6 +305,7 @@
 
   .order-form__checkboxes {
     display: grid;
+    width: 786px;
     grid-template-columns: 1fr 1fr 1fr;
   }
 

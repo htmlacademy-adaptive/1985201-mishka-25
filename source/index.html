@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка.</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../source/img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -14,7 +16,7 @@
           <a class="navigation__logo" href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 786px)" srcset="img/mishka-logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
               <img class="navigation__logo-image" src="img/mishka-logo-simple.svg" width="85" height="34" alt="Магазин товаров ручной работы «Мишка».">
             </picture>
           </a>
@@ -139,7 +141,7 @@
                   25 см
                 </dd>
               </div>
-              <div class="product-features__item">
+              <div class="product-features__item product-features__item--height">
                 <dt class="product-features__info">
                   Высота:
                 </dt>
@@ -167,7 +169,7 @@
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="advantages__title">
-            Коротко о нас
+            Коротко о нас:
           </h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--flower">
@@ -258,7 +260,7 @@
             </h2>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <span class="contacts__email-legend">email:</span>
+                <span class="contacts__email-legend">e-mail:</span>
                 <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
                   <span class="contacts__email-title">
                     info@mimimishkashop.ru
@@ -279,7 +281,7 @@
             <a class="contacts__map">
               <span class="visually-hidden">Как добраться до магазина «Мишка».</span>
               <svg class="contacts__mark" width="67" height="100">
-                <use href="img/sprite.svg#contacts-mark"></use>
+                <use href="img/sprite.svg#map-mark"></use>
               </svg>
             </a>
           </div>
@@ -337,10 +339,10 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <p class="copyright__text">
-            Разработано:
-          </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">
+              Разработано
+            </p>
             <span class="visually-hidden">
               HTML Academy.
             </span>
@@ -351,6 +353,48 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <div class="modal modal--closed">
+      <div class="modal__container">
+        <h3 class="modal__title">
+          Добавить<br class="modal__hyphenation">
+          в корзину
+        </h3>
+        <p class="modal__description">
+          Выберите размер:
+        </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__fieldset">
+            <legend class="visually-hidden">
+              3 размера на выбор.
+            </legend>
+            <ul class="modal__radios">
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="s-size" checked>
+                  <span class="modal-radio__mark">S</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="m-size">
+                  <span class="modal-radio__mark">M</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="l-size">
+                  <span class="modal-radio__mark">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__submit-button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

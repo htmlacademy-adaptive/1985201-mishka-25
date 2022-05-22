@@ -7,21 +7,22 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-welcome-background-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: @mobile-width auto;
   }
 }
 
 .welcome-group {
   &--solid-background {
-    background-color: @grey;
+    background-color: @gray;
   }
 }
 
 .welcome-group__title {
-  .bold-bigger-font;
+  .font-700-27-30;
   text-align: center;
-  margin: 0;
-  padding: 73px 30px 120px 30px;
+  margin: 0 auto;
+  padding: 73px 0 120px 0;
+  max-width: 1150px;
 
   &--solid-background {
     padding: 73px 0;
@@ -40,12 +41,11 @@
   }
 
   .welcome-group__title {
-    font-size: 43px;
-    line-height: 50px;
-    padding: 155px 0 372px 0;
+    .font-700-43-50;
+    padding: 153px 0 372px 0;
 
     &--solid-background {
-      padding: 101px 0 75px 0;
+      padding: 101px 0 85px 0;
     }
   }
 
@@ -57,19 +57,24 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-welcome-background-desktop@2x.jpg");
-      background-size: 768px auto;
+      background-size: @tablet-width auto;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome-group__title {
-    font-size: 53px;
-    line-height: 57px;
+    .font-700-53-57;
     padding: 158px 0 355px 0;
 
     &--solid-background {
-      padding: 101px 0 95px 0;
+      padding: 101px 0 113px 0;
     }
+  }
+
+  .welcome-group__wrapper {
+    background-size: auto 123%;
+    background-position: center top -17px;
+    background-repeat: no-repeat;
   }
 }

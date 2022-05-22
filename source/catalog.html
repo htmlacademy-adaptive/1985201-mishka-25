@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../source/img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -14,7 +16,7 @@
           <a class="navigation__logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
-              <source media="(min-width: 786px)" srcset="img/mishka-logo-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
               <img class="navigation__logo-image" src="img/mishka-logo-simple.svg" width="85" height="34" alt="Магазин товаров ручной работы «Мишка».">
             </picture>
           </a>
@@ -99,26 +101,26 @@
               </picture>
             </a>
             <div class="products__text-description">
-            <a class="products__link" href="#">
-              <h3 class="products__title">
-                Зайчик-попрыгайчик
-              </h3>
-            </a>
-            <p class="products__description">
-              Рост 30 см, вес 200 г
-            </p>
-            <a class="products__add-to-cart-button" href="#">
-              <span class="products__price">
-                1 200 руб.
-              </span>
-              <span class="visually-hidden">
-                Добавить позицию в корзину.
-              </span>
-              <svg class="products__cart-icon" width="21" height="18">
-                <use href="img/sprite.svg#cart"></use>
-              </svg>
-            </a>
-          </div>
+              <a class="products__link" href="#">
+                <h3 class="products__title">
+                  Зайчик-попрыгайчик
+                </h3>
+              </a>
+              <p class="products__description">
+                Рост 30 см, вес 200 г
+              </p>
+              <a class="products__add-to-cart-button" href="#">
+                <span class="products__price">
+                  1 200 руб.
+                </span>
+                <span class="visually-hidden">
+                  Добавить позицию в корзину.
+                </span>
+                <svg class="products__cart-icon" width="21" height="18">
+                  <use href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
+            </div>
           </li>
           <li class="products__card">
             <a class="products__link" href="#">
@@ -160,7 +162,7 @@
             </a>
             <div class="products__text-description">
             <a class="products__link" href="#">
-              <h3 class="products__title">
+              <h3 class="products__title products__title--big-toy-basket">
                 Большая корзинка<br>
                 для игрушек
               </h3>
@@ -186,7 +188,7 @@
       <section class="tutorial">
         <div class="tutorial__wrapper">
           <h2 class="tutorial__title">
-            Процесс<br>
+            Процесс<br class="tutorial__hyphenation">
             производства
           </h2>
           <div class="tutorial__video-wrapper">
@@ -195,7 +197,7 @@
               <img class="tutorial__video" width="260" height="150" src="img/video-mobile.jpg" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.jpg 2x, img/video-mobile@2x.webp 2x" alt="Процесс производства в видеоформате.">
             </picture>
             <svg class="tutorial__play-icon" width="101" height="77">
-              <use href="img/sprite.svg#tutorial-play-icon"></use>
+              <use href="img/sprite.svg#play-icon"></use>
             </svg>
           </div>
           <p class="tutorial__description">
@@ -204,15 +206,17 @@
             подробное видео о том, как
             появляются наши товары.
           </p>
-          <a class="button tutorial__order-button" href="#">
-            Сделать заказ
-          </a>
+          <div class="tutorial__order-button-wrapper">
+            <a class="button tutorial__order-button" href="#">
+              Сделать заказ
+            </a>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="index.html">
           <span class="visually-hidden">Магазин товаров ручной работы «Мишка».</span>
           <svg class="footer__logo-image" width="102" height="34">
             <use href="img/sprite.svg#mishka-logo-footer"></use>
@@ -257,7 +261,7 @@
         </div>
         <div class="footer__copyright copyright">
           <p class="copyright__text">
-            Разработано:
+            Разработано
           </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">
@@ -270,6 +274,48 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <div class="modal modal--closed">
+      <div class="modal__container">
+        <h3 class="modal__title">
+          Добавить<br class="modal__hyphenation">
+          в корзину
+        </h3>
+        <p class="modal__description">
+          Выберите размер:
+        </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="modal__fieldset">
+            <legend class="visually-hidden">
+              3 размера на выбор.
+            </legend>
+            <ul class="modal__radios">
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="s-size" checked>
+                  <span class="modal-radio__mark">S</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="m-size">
+                  <span class="modal-radio__mark">M</span>
+                </label>
+              </li>
+              <li class="modal-radio">
+                <label class="modal-radio__label">
+                  <input class="visually-hidden" type="radio" name="type" value="l-size">
+                  <span class="modal-radio__mark">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button modal__submit-button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
