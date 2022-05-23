@@ -10,7 +10,7 @@
 .products__card {
   width: @mobile-width-padding30;
   border: 1px solid @light-gray;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 28px auto;
 
   &:hover {
     box-shadow: 0 6px 10px @black01;
@@ -18,6 +18,10 @@
 
   &:active {
     box-shadow: 0 3px 5px @black01;
+  }
+
+  &:last-child {
+    margin-bottom: 30px;
   }
 }
 
@@ -62,31 +66,33 @@
   margin: 0;
   margin-top: 5px;
   padding-bottom: 17px;
+
+  &--big-toy-basket {
+    margin-top: 8px;
+  }
+}
+
+.products__price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  border-top: 1px solid @light-gray;
 }
 
 .products__price {
+  position: relative;
   display: block;
   margin-top: 3px;
   margin-bottom: 0;
   max-width: 180px;
-}
-
-.products__cart-icon {
-  position: absolute;
-  right: 0;
-  top: 22px;
-  fill: @black02;
+  font-weight: 700;
 }
 
 .products__add-to-cart-button {
-  position: relative;
-  display: block;
+  fill: @black02;
   text-decoration: none;
-  padding-top: 22px;
-  color: @black;
   cursor: pointer;
-  font-weight: 700;
-  border-top: 1px solid @light-gray;
+  margin: 3px 0 0 0;
 
   &:hover {
     color: @black06;
@@ -108,6 +114,7 @@
 @media (min-width: @tablet-width) {
   .products__list {
     margin-top: 65px;
+    margin-bottom: 52px;
   }
 
   .products__card {
@@ -139,6 +146,10 @@
   .products__price {
     font-size: 17px;
   }
+
+  .products__add-to-cart-button {
+    margin: 3px 4px 0 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -146,14 +157,18 @@
     display: flex;
     flex-direction: column;
     width: 316px;
-    margin-bottom: 57px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .products__list {
     width: @desktop-width-padding50;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 51px;
+    gap: 49px;
     margin: 111px auto 0 auto;
   }
 
@@ -162,15 +177,20 @@
     height: 462px;
   }
 
-  .products__description {
-    margin-bottom: 0;
+  .products__text-description {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 27px;
+    padding-bottom: 22px;
   }
 
-  .products__text-description {
-    padding-left: 27px;
+  .products__description {
+    padding-bottom: 12px;
+  }
+
+  .products__price-wrapper {
+    padding-top: 20px;
   }
 
   .products__price {

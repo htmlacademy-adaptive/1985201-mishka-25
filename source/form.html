@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Мишка</title>
+    <title>
+      HTML Academy: Мишка
+    </title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="../source/img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -26,19 +28,19 @@
             </span>
           </button>
           <ul class="navigation__list navigation__list--main">
-            <li class="navigation__item navigation__item--catalog">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--catalog" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation__item navigation__item--order">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--order" href="form.html">
                 Вязание на заказ
               </a>
             </li>
           </ul>
           <ul class="navigation__list navigation__list--actions">
-            <li class="navigation__item navigation__item--search">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--search" href="#">
                 <span class="navigation__search-label">
                   Поиск по сайту
@@ -48,7 +50,7 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation__item navigation__item--cart">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--cart" href="#">
                 <span>
                   Корзина: пока пуста
@@ -118,18 +120,20 @@
                   <label class="choice">
                     <input class="visually-hidden" type="radio" name="type" value="childrens-toy">
                     <span class="choice__mark"></span>
-                    <span class="choice__label">Детская игрушка</span>
+                    <span class="choice__label">
+                      Детская игрушка
+                    </span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <div class="order-form__fieldset-wrapper order-form__fieldset-wrapper--checkboxes">
+            <div class="order-form__fieldset-wrapper">
               <fieldset class="order-form__fieldset order-form__fieldset--checkboxes">
                 <legend class="order-form__legend order-form__legend--checkboxes">
                   Цвет
                 </legend>
                 <ul class="order-form__checkboxes">
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="white" checked>
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -138,7 +142,7 @@
                       </span>
                     </label>
                   </li>
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="grey" checked>
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -147,7 +151,7 @@
                       </span>
                     </label>
                   </li>
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="tiffany">
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -156,7 +160,7 @@
                       </span>
                     </label>
                   </li>
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="black">
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -165,7 +169,7 @@
                       </span>
                     </label>
                   </li>
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="pink">
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -174,7 +178,7 @@
                       </span>
                     </label>
                   </li>
-                  <li class="order-form__checkboxes-item">
+                  <li>
                     <label class="choice choice--checkbox">
                       <input class="visually-hidden" type="checkbox" name="color" value="orange">
                       <span class="choice__mark choice__mark--checkbox"></span>
@@ -191,7 +195,7 @@
                 ФИО
               </legend>
               <div class="order-form__client-names">
-                <div class="order-form__client-name order-form__client-name--name">
+                <div class="order-form__client-name">
                   <label class="text-field">
                     <span class="text-field__label">
                       Имя:
@@ -224,7 +228,7 @@
                 </legend>
                 <div class="order-form__phone-wrapper">
                   <label class="text-field text-field--phone">
-                    <span class="order-form__legend order-form__legend--phone text-field__label text-field__label--contacts">
+                    <span class="order-form__legend order-form__legend--phone text-field__label">
                       Тел
                     </span>
                     <input class="text-field__input text-field__input--phone" type="tel" name="client-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -235,7 +239,7 @@
                 </div>
                 <div class="order-form__email-wrapper">
                   <label class="text-field text-field--email">
-                    <span class="order-form__legend order-form__legend--email text-field__label text-field__label--contacts">
+                    <span class="order-form__legend order-form__legend--email text-field__label">
                       E-mail
                     </span>
                     <input class="text-field__input text-field__input--email" type="email" name="client-email" placeholder="Ваш Email*" required>
@@ -251,7 +255,7 @@
                 Доп
               </legend>
               <div class="order-form__additional-info-wrapper">
-                <label class="text-field text-field--aditional-info">
+                <label class="text-field">
                   <span class="visually-hidden">
                     Дополнительная информация.
                   </span>
@@ -274,18 +278,20 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="index.html">
-          <span class="visually-hidden">Магазин товаров ручной работы «Мишка».</span>
-          <svg class="footer__logo-image" width="102" height="34">
+          <span class="visually-hidden">
+            Магазин товаров ручной работы «Мишка».
+          </span>
+          <svg width="102" height="34">
             <use href="img/sprite.svg#mishka-logo-footer"></use>
           </svg>
         </a>
-        <div class="social footer__social">
+        <div class="social">
           <h3 class="visually-hidden">
             Присоединяйтесь к нам в социальных сетях.
           </h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">
                   Мы в Вконтакте.
                 </span>
@@ -305,7 +311,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Мы в Телеграме.
                 </span>
@@ -317,10 +323,10 @@
           </ul>
         </div>
         <div class="footer__copyright copyright">
-          <p class="copyright__text">
-            Разработано
-          </p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">
+              Разработано
+            </p>
             <span class="visually-hidden">
               HTML Academy.
             </span>
