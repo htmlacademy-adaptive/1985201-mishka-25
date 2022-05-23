@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Мишка.</title>
+    <title>
+      HTML Academy: Мишка.
+    </title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="../source/img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -26,19 +28,19 @@
             </span>
           </button>
           <ul class="navigation__list navigation__list--main">
-            <li class="navigation__item navigation__item--catalog">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--catalog" href="catalog.html">
                 Каталог товаров
               </a>
             </li>
-            <li class="navigation__item navigation__item--order">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--order" href="form.html">
                 Вязание на заказ
               </a>
             </li>
           </ul>
           <ul class="navigation__list navigation__list--actions">
-            <li class="navigation__item navigation__item--search">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--search" href="#">
                 <span class="navigation__search-label">
                   Поиск по сайту
@@ -48,7 +50,7 @@
                 </svg>
               </a>
             </li>
-            <li class="navigation__item navigation__item--cart">
+            <li class="navigation__item">
               <a class="navigation__link navigation__link--cart" href="#">
                 <span>
                   Корзина: пока пуста
@@ -91,13 +93,13 @@
         <section class="assortment">
           <div class="assortment__wrapper">
             <ul class="assortment__list">
-              <li class="assortment__item">
+              <li>
                 <a class="assortment__link assortment__link--interior">
                   Предметы<br>
                   интерьера
                 </a>
               </li>
-              <li class="assortment__item">
+              <li>
                 <a class="assortment__link assortment__link--toys">
                   Детские<br>
                   игрушки
@@ -167,62 +169,60 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">
-            Коротко о нас:
-          </h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--flower">
-              <svg class="advantages__icon advantages__icon--flower" width="33" height="38">
-                <use href="img/sprite.svg#advantages-flower"></use>
-              </svg>
-              Экологически<br>
-              чистые материалы
-            </li>
-            <li class="advantages__item advantages__item--money">
-              <svg class="advantages__icon advantages__icon--money" width="47" height="27">
-                <use href="img/sprite.svg#advantages-money"></use>
-              </svg>
-              Скандинавский стиль<br>
-              по российской цене
-            </li>
-            <li class="advantages__item advantages__item--heart">
-              <svg class="advantages__icon advantages__icon--heart" width="34" height="27">
-                <use href="img/sprite.svg#advantages-heart"></use>
-              </svg>
-              Увеличивает лайки<br>
-              на фотографиях
-            </li>
-            <li class="advantages__item advantages__item--yarn">
-              <svg class="advantages__icon advantages__icon--yarn" width="35" height="34">
-                <use href="img/sprite.svg#advantages-yarn-ball"></use>
-              </svg>
-              Связано вручную<br>
-              с любовью и умилением
-            </li>
-            <li class="advantages__item advantages__item--rocket">
-              <svg class="advantages__icon advantages__icon--rocket" width="55" height="23">
-                <use href="img/sprite.svg#advantages-rocket"></use>
-              </svg>
-              Поддержка отечественного<br>
-              производителя
-            </li>
-            <li class="advantages__item advantages__item--gift">
-              <svg class="advantages__icon advantages__icon--gift" width="33" height="32">
-                <use href="img/sprite.svg#advantages-gift"></use>
-              </svg>
-              Поставляется<br>
-              в подарочной упаковке
-            </li>
-          </ul>
-        </div>
+        <h2 class="advantages__title">
+          Коротко о нас:
+        </h2>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--flower">
+            <svg class="advantages__icon advantages__icon--flower" width="33" height="38">
+              <use href="img/sprite.svg#advantages-flower"></use>
+            </svg>
+            Экологически<br>
+            чистые материалы
+          </li>
+          <li class="advantages__item advantages__item--money">
+            <svg class="advantages__icon advantages__icon--money" width="47" height="27">
+              <use href="img/sprite.svg#advantages-money"></use>
+            </svg>
+            Скандинавский стиль<br>
+            по российской цене
+          </li>
+          <li class="advantages__item advantages__item--heart">
+            <svg class="advantages__icon advantages__icon--heart" width="34" height="27">
+              <use href="img/sprite.svg#advantages-heart"></use>
+            </svg>
+            Увеличивает лайки<br>
+            на фотографиях
+          </li>
+          <li class="advantages__item advantages__item--yarn">
+            <svg class="advantages__icon advantages__icon--yarn" width="35" height="34">
+              <use href="img/sprite.svg#advantages-yarn-ball"></use>
+            </svg>
+            Связано вручную<br>
+            с любовью и умилением
+          </li>
+          <li class="advantages__item advantages__item--rocket">
+            <svg class="advantages__icon advantages__icon--rocket" width="55" height="23">
+              <use href="img/sprite.svg#advantages-rocket"></use>
+            </svg>
+            Поддержка отечественного<br>
+            производителя
+          </li>
+          <li class="advantages__item advantages__item--gift">
+            <svg class="advantages__icon advantages__icon--gift" width="33" height="32">
+              <use href="img/sprite.svg#advantages-gift"></use>
+            </svg>
+            Поставляется<br>
+            в подарочной упаковке
+          </li>
+        </ul>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">
             Отзывы
           </h2>
-          <div class="reviews__slide">
+          <div>
             <p class="reviews__text">
               Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков,
               как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке,
@@ -248,7 +248,9 @@
             </button>
           </p>
           <button class="button reviews__button" type="button">
-            <span class="reviews__button-title">Написать</span>
+            <span>
+              Написать
+            </span>
           </button>
         </div>
       </section>
@@ -260,7 +262,7 @@
             </h2>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <span class="contacts__email-legend">e-mail:</span>
+                <span>e-mail:</span>
                 <a class="contacts__email" href="mailto:info@mimimishkashop.ru">
                   <span class="contacts__email-title">
                     info@mimimishkashop.ru
@@ -268,7 +270,7 @@
                 </a>
               </li>
               <li class="contacts__item">
-                <span class="contacts__adress-legend">адрес:</span>
+                <span>адрес:</span>
                 <address class="contacts__adress">
                   г. Санкт-Петербург<br>
                   ул. Большая Конюшенная<br>
@@ -279,7 +281,9 @@
           </div>
           <div class="contacts__map-wrapper">
             <a class="contacts__map">
-              <span class="visually-hidden">Как добраться до магазина «Мишка».</span>
+              <span class="visually-hidden">
+                Как добраться до магазина «Мишка».
+              </span>
               <svg class="contacts__mark" width="67" height="100">
                 <use href="img/sprite.svg#map-mark"></use>
               </svg>
@@ -296,18 +300,20 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo" href="#">
-          <span class="visually-hidden">Магазин товаров ручной работы «Мишка».</span>
-          <svg class="footer__logo-image" width="102" height="34">
+          <span class="visually-hidden">
+            Магазин товаров ручной работы «Мишка».
+          </span>
+          <svg width="102" height="34">
             <use href="img/sprite.svg#mishka-logo-footer"></use>
           </svg>
         </a>
-        <div class="social footer__social">
+        <div class="social">
           <h3 class="visually-hidden">
             Присоединяйтесь к нам в социальных сетях.
           </h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social__link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">
                   Мы в Вконтакте.
                 </span>
@@ -327,7 +333,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <a class="social__link social__link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">
                   Мы в Телеграме.
                 </span>
@@ -362,7 +368,7 @@
         <p class="modal__description">
           Выберите размер:
         </p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="modal__fieldset">
             <legend class="visually-hidden">
               3 размера на выбор.
@@ -371,19 +377,25 @@
               <li class="modal-radio">
                 <label class="modal-radio__label">
                   <input class="visually-hidden" type="radio" name="type" value="s-size" checked>
-                  <span class="modal-radio__mark">S</span>
+                  <span class="modal-radio__mark">
+                    S
+                  </span>
                 </label>
               </li>
               <li class="modal-radio">
                 <label class="modal-radio__label">
                   <input class="visually-hidden" type="radio" name="type" value="m-size">
-                  <span class="modal-radio__mark">M</span>
+                  <span class="modal-radio__mark">
+                    M
+                  </span>
                 </label>
               </li>
               <li class="modal-radio">
                 <label class="modal-radio__label">
                   <input class="visually-hidden" type="radio" name="type" value="l-size">
-                  <span class="modal-radio__mark">L</span>
+                  <span class="modal-radio__mark">
+                    L
+                  </span>
                 </label>
               </li>
             </ul>
